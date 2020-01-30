@@ -99,3 +99,5 @@ target/
 /data/processed
 /data/raw
 
+# Mac OS
+.DS_Store

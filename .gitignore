@@ -94,10 +94,12 @@ target/
 # exclude compiled binaries and external models
 /bin
 
-# exclude data from source control by default
-/data/temp
-/data/processed
-/data/raw
+# (Normally data should not be committed to the git repository, 
+# but for simplicity we make an exception in this course.)
+## exclude data from source control by default
+#/data/temp
+#/data/processed
+#/data/raw
 
 # Mac OS
 .DS_Store

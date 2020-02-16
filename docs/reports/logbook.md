@@ -19,3 +19,6 @@ and the total avoided use of fossil energy on the y-axis, with different colors 
 **RQ2: How much has the CO2 emission in the Netherlands changed in the period of 1990 to 2018 and which renewable energy source has relatively reduced CO2 emission the most?** 
 Possible methods: a line chart showing the CO2 emission, with the years 1990-2018 on the x-axis and CO2 emission on the y-axis. For the second part of the research question:
 a bar graph with a bar for each renewable energy source per year (1990-2018) on the x-axis, with relative reduced CO2 emission on the y-axis. 
+
+**RQ3: What is the difference in usage of wood in a household regarding a freestanding wooden stove and a freestanding pallet stove?
+Possible methods: Analysing the data from the charts and putting them in a graphic from different perspectives.

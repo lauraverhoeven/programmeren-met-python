@@ -3,8 +3,8 @@ We have chosen to use the data set "Hernieuwbare energie; verbruik naar energieb
 for our research project. This data set includes information about use of renewable energy sources (wind-, water-, solarpower, geothermal energy, aerothermic energy and biomass) in the years 1990 to 2018 in the Netherlands,
 including information about the avoided use of fossil energy and avoided CO2 emissions per renewable energy source. 
 We are intereseted in this data set, because renewable energy is a very relevant topic with a huge impact on our generation. 
-We are very curious to see how renewable energy is used in the Netherlands and how its use and impact has changed in our lifetimes.
-We think this is a topic which statistics should be more widely known and we think it would be good if the data is more easily accesible.
+We are curious to see how renewable energy is used in the Netherlands and how its use and impact has changed in our lifetimes.
+We think this is a topic which statistics should be more widely known and we think it would be good if the results from this research are easily accesible.
 Thus, using this research project, we would like to create some insight in the use of renewable energy in the Netherlands for anyone interested in this topic.
 
 

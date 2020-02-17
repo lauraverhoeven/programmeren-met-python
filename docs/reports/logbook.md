@@ -22,3 +22,7 @@ a bar graph with a bar for each renewable energy source per year (1990-2018) on 
 
 **RQ3: What is the difference in usage of wood in a household regarding a freestanding wooden stove and a freestanding pallet stove?**
 Possible methods: Analysing the data from the charts and putting them in a graphic from different perspectives. Bar graphs with on the x axis the two bars and on the y axis the amount of wood used.
+
+**RQ4 Which energy source was the most efficient in 2018 in terms of producing energy with the highest prevention of CO2 emission?** 
+To answer the question, one must calculate how much CO2 is emitted per kilowatt-hour of energy ( of a particular renewable source).
+Then you can make a bar chart of it with on the y- axis the efficiency and on the x-axis the different energy sources. 

@@ -1,0 +1,342 @@
+﻿"TableInfos"
+"ID";"Title";"ShortTitle";"Identifier";"Summary";"Modified";"ReasonDelivery";"ExplanatoryText";"Language";"Catalog";"Frequency";"Period";"ShortDescription";"Description";"DefaultPresentation";"DefaultSelection";"GraphTypes";"OutputStatus";"Source";"MetaDataModified";"SearchPriority"
+"0";"Hernieuwbare energie; verbruik naar energiebron, techniek en toepassing";"Hernieuwbare energie; verbruik";"83109NED";"Eindverbruik, vermeden verbruik fossiele energie en vermeden CO2
+uit waterkracht, wind- , zonne- bodem- en buitenluchtenergie en biomassa.";"2020-01-23T02:00:00";"Correctie";"De cijfers voor totaal biomassa en totaal energiebronnen over het jaar 2014 zijn gecorrigeerd. De optelling van de onderliggende energiebronnen van biomassa naar totaal biomassa was niet juist waardoor ook het totaal over alle energiebronnen fout was. Na correctie komen de totalen in 2014 voor het bruto eindverbruik van hernieuwbare energie 1,4 PJ lager uit.";"nl";"CBS";"Perjaar";"1990 - 2018";"
+Hernieuwbare energie is energie uit wind, waterkracht, zon, bodem, buitenluchtwarmte en biomassa. Dit is energie uit natuurlijke processen die constant worden aangevuld.
+
+In deze tabel wordt het verbruik van hernieuwbare energie op drie manieren uitgedrukt:
+1. Bruto eindverbruik
+2. Vermeden verbruik van fossiele energie
+3. Vermeden emissies van kooldioxide
+Cijfers worden zowel in absolute zin gepresenteerd als ten opzichte van het totale verbruik of totale emissies in Nederland.
+
+Het bruto eindverbruik van hernieuwbare energie als percentage van het totale bruto eindverbruik wordt gebruikt als doel voor het Europese en nationale beleid voor hernieuwbare energie. Afgesproken is dat het Nederlandse aandeel hernieuwbare energie, in termen van bruto eindverbruik, in 2020 gelijk moet zijn aan 14 procent.
+
+Het vermijden van het verbruik van fossiele energie en het vermijden van emissies van kooldioxide zijn belangrijke achterliggende doelstellingen voor het stimuleren van het gebruik van hernieuwbare energie.
+
+De cijfers worden uitgesplitst naar energiebron/techniek en naar toepassing (elektriciteit, warmte en vervoer).
+
+Gegevens beschikbaar vanaf: 1990
+
+Status van de cijfers:
+De cijfers in deze tabel zijn definitief tot en met 2018.
+
+Wijzingen per 23 januari 2020:
+De cijfers voor totaal biomassa en totaal energiebronnen over het jaar 2014 zijn gecorrigeerd. De optelling van de onderliggende energiebronnen van biomassa naar totaal biomassa was niet juist waardoor ook het totaal over alle energiebronnen fout was. Na correctie komen de totalen in 2014 voor het bruto eindverbruik van hernieuwbare energie 1,4 PJ lager uit.
+
+Wijzingen per 19 december 2019:
+De cijfers over bruto eindverbruik van hernieuwbare energie over 2018 zijn definitief geworden. 
+ 
+De cijfers van 2017 over bodemwarmte en buitenluchtwarmte zijn bijgesteld op grond van nagekomen gegevens en zijn hierdoor hoger (warmteproductie +0,2 PJ) dan voorheen is gepubliceerd. Het gaat vooral om een toename van energie van warmtepompen die gebruik maken van buitenlucht. 
+
+De gehele reeks 1990-2017 met uitkomsten over energieverbruik uit biomassa door huishoudens is gereviseerd naar aanleiding van de resultaten van het WoonOnderzoek Nederland. De uitkomsten komen lager uit; in 2014-2016 circa 2 PJ lager en in de jaren daarvoor circa 1 PJ lager.
+ 
+Vanaf 2011 zijn de uitkomsten over biogas gereviseerd door een verandering van de verdeelfactoren van het biogas naar verbruik voor elektriciteit, warmte en vervoer. Aan het verbruik voor vervoer wordt meer biogas toegewezen. Deze verandering komt voort uit een nieuwe interpretatie van de Richtlijn Hernieuwbare energie door de Europese Commissie.
+
+Met ingang van verslagjaar 2018 wordt in de berekening van de productie van zonnestroom de sterkte van de instraling van de zon meegenomen. De sterkte van de instraling in 2018 was 14 procent hoger dan het langjarig gemiddelde waardoor de uitkomsten voor zonnestroom hoger uitkomen dan eerder gepubliceerd. 
+
+Tevens zijn de cijfers over biomassa 2015 aangepast omdat deze nu op dezelfde wijze uit het vernieuwde IT-systeem zijn overgenomen als 2016 en latere jaren.
+
+Wanneer komen er nieuwe cijfers:
+Voorlopige cijfers over het bruto eindverbruik van hernieuwbare energie op hoofdlijnen over het voorafgaande jaar verschijnen elk jaar in mei.
+Nader voorlopige cijfers over het voorafgaande jaar verschijnen elk jaar in juni, uitgezonderd cijfers over koude en bodemwarmte zonder warmtepompen.
+In december worden alle cijfers over het verbruik van hernieuwbare energie in het voorafgaande jaar gepubliceerd. Deze cijfers krijgen in december de status definitief, echter de cijfers over het aandeel in het totale energieverbruik van Nederland en over de vermeden CO2 kunnen door het beschikbaar komen van bijgestelde cijfers over totaal energieverbruik en totale emissie van CO2 nog worden gewijzigd.
+
+";"INHOUDSOPGAVE
+
+1. Toelichting
+2. Definities en verklaring van symbolen
+3. Koppelingen naar relevante tabellen en artikelen
+4. Bronnen en methoden
+5. Meer informatie 
+
+
+1. TOELICHTING
+
+Hernieuwbare energie is energie uit wind, waterkracht, zon, bodem, buitenluchtwarmte en biomassa. Dit is energie uit natuurlijke processen die constant worden aangevuld.
+
+In deze tabel wordt het verbruik van hernieuwbare energie op drie manieren uitgedrukt:
+1. Bruto eindverbruik
+2. Vermeden verbruik van fossiele energie
+3. Vermeden emissies van kooldioxide
+Cijfers worden zowel in absolute zin gepresenteerd als ten opzichte van het totale verbruik of totale emissies in Nederland.
+
+Het bruto eindverbruik van hernieuwbare energie als percentage van het totale bruto eindverbruik wordt gebruikt als doel voor het Europese en nationale beleid voor hernieuwbare energie. Afgesproken is dat het Nederlandse aandeel hernieuwbare energie, in termen van bruto eindverbruik, in 2020 gelijk moet zijn aan 14 procent.
+
+Het vermijden van het verbruik van fossiele energie en het vermijden van emissies van kooldioxide zijn belangrijke achterliggende doelstellingen voor het stimuleren van het gebruik van hernieuwbare energie.
+
+De cijfers worden uitgesplitst naar energiebron/techniek en naar toepassing (elektriciteit, warmte en vervoer).
+
+Gegevens beschikbaar vanaf: 1990
+
+Status van de cijfers:
+De cijfers in deze tabel zijn definitief tot en met 2018.
+
+Wijzingen per 23 januari 2020:
+De cijfers voor totaal biomassa en totaal energiebronnen over het jaar 2014 zijn gecorrigeerd. De optelling van de onderliggende energiebronnen van biomassa naar totaal biomassa was niet juist waardoor ook het totaal over alle energiebronnen fout was. Na correctie komen de totalen in 2014 voor het bruto eindverbruik van hernieuwbare energie 1,4 PJ lager uit.
+
+Wijzingen per 19 december 2019:
+De cijfers over bruto eindverbruik van hernieuwbare energie over 2018 zijn definitief geworden. 
+ 
+De cijfers van 2017 over bodemwarmte en buitenluchtwarmte zijn bijgesteld op grond van nagekomen gegevens en zijn hierdoor hoger (warmteproductie +0,2 PJ) dan voorheen is gepubliceerd. Het gaat vooral om een toename van energie van warmtepompen die gebruik maken van buitenlucht. 
+
+De gehele reeks 1990-2017 met uitkomsten over energieverbruik uit biomassa door huishoudens is gereviseerd naar aanleiding van de resultaten van het WoonOnderzoek Nederland. De uitkomsten komen lager uit; in 2014-2016 circa 2 PJ lager en in de jaren daarvoor circa 1 PJ lager.
+ 
+Vanaf 2011 zijn de uitkomsten over biogas gereviseerd door een verandering van de verdeelfactoren van het biogas naar verbruik voor elektriciteit, warmte en vervoer. Aan het verbruik voor vervoer wordt meer biogas toegewezen. Deze verandering komt voort uit een nieuwe interpretatie van de Richtlijn Hernieuwbare energie door de Europese Commissie.
+
+Met ingang van verslagjaar 2018 wordt in de berekening van de productie van zonnestroom de sterkte van de instraling van de zon meegenomen. De sterkte van de instraling in 2018 was 14 procent hoger dan het langjarig gemiddelde waardoor de uitkomsten voor zonnestroom hoger uitkomen dan eerder gepubliceerd. 
+
+Tevens zijn de cijfers over biomassa 2015 aangepast omdat deze nu op dezelfde wijze uit het vernieuwde IT-systeem zijn overgenomen als 2016 en latere jaren.
+
+Wanneer komen er nieuwe cijfers:
+Voorlopige cijfers over het bruto eindverbruik van hernieuwbare energie op hoofdlijnen over het voorafgaande jaar verschijnen elk jaar in mei.
+Nader voorlopige cijfers over het voorafgaande jaar verschijnen elk jaar in juni, uitgezonderd cijfers over koude en bodemwarmte zonder warmtepompen.
+In december worden alle cijfers over het verbruik van hernieuwbare energie in het voorafgaande jaar gepubliceerd. Deze cijfers krijgen in december de status definitief, echter de cijfers over het aandeel in het totale energieverbruik van Nederland en over de vermeden CO2 kunnen door het beschikbaar komen van bijgestelde cijfers over totaal energieverbruik en totale emissie van CO2 nog worden gewijzigd.
+
+
+2. DEFINITIES EN VERKLARING VAN SYMBOLEN
+
+Hernieuwbare energie is energie uit wind, waterkracht, zon, bodem, buitenluchtwarmte en biomassa. Dit is energie uit natuurlijke processen die constant worden aangevuld.
+
+Het bruto eindverbruik van energie is het door gebruik opmaken van energie voor door eindgebruikers. Hierna resteert geen nuttig bruikbare energiedrager. Het verbruik van elektriciteit en warmte door elektriciteitsproductiebedrijven en de distributieverliezen van elektriciteit en warmte is daarbij opgeteld. 
+
+Eindgebruikers zijn de sectoren industrie industrie (exclusief raffinaderijen), huishoudens, diensten, landbouw, visserij en vervoer.
+
+Fossiele energie is energie uit aardgas, aardolie, steenkool of radioactief materiaal. Dit is energie uit natuurlijke processen die niet of slechts zeer langzaam wordt aangevuld.
+
+Verklaring van symbolen:
+
+niets (blanco)	: het cijfer kan op logische gronden niet voorkomen
+. 		: het cijfer is onbekend, onvoldoende betrouwbaar of geheim
+*		: voorlopige cijfers
+**		: nader voorlopige cijfers
+
+In deze tabel wordt het symbool niets (blanco) ook gebruikt voor cellen die nihil zijn.
+
+
+3. KOPPELINGEN NAAR RELEVANTE TABELLEN EN ARTIKELEN
+
+Relevante tabellen:
+
+De belangrijkste aanverwante tabellen over hernieuwbare energie zijn:
+- <a 
+href=/""/https://opendata.cbs.nl/statline/#/CBS/nl/dataset/82610NED/""/>Hernieuwbare elektriciteit; productie en vermogen </a>
+
+- <a 
+href=/""/https://opendata.cbs.nl/statline/#/CBS/nl/dataset/82004NED/""/>Biomassa; verbruik en energieproductie uit biomassa per techniek</a>
+
+Elektriciteitsproductie uit biomassa, waterkracht, wind en zon per maand is opgenomen in:
+
+- <a 
+href=/""/https://opendata.cbs.nl/statline/#/CBS/nl/dataset/84575NED/""/>Elektriciteitsbalans; aanbod en verbruik</a>.
+
+De energiebalans staat hier:
+- <a 
+href=/""/https://opendata.cbs.nl/statline/#/CBS/nl/dataset/83140NED/""/>Energiebalans; aanbod, omzetting en verbruik</a>
+
+en
+
+- <a href=/""/https://opendata.cbs.nl/statline/#/CBS/nl/dataset/83989NED/""/>Energiebalans; aanbod en verbruik, sector</a>.
+
+Relevant artikel:
+
+Geen
+
+Meer informatie is te vinden op de themapagina <a href=/""/https://www.cbs.nl/nl-nl/economie/industrie-en-energie/""/>Industrie en energie</a>.
+
+
+4. BRONNEN EN METHODEN
+
+In het artikel <a href=/""/https://www.cbs.nl/nl-nl/onze-diensten/methoden/onderzoeksomschrijvingen/aanvullende%20onderzoeksbeschrijvingen/revisie-hernieuwbare-energie-2015/""/>Revisie hernieuwbare energie 2015</a> wordt toegelicht welke veranderingen zijn opgetreden in de statistiek Hernieuwbare energie als gevolg van de revisie in juni 2015.
+
+De onderzoeksmethode van deze tabel is te vinden in de onderzoeksbeschrijving <a href=/""/https://www.cbs.nl/nl-nl/onze-diensten/methoden/onderzoeksomschrijvingen/korte-onderzoeksbeschrijvingen/hernieuwbare-energie/""/>Hernieuwbare energie</a>.
+
+De methode voor de berekening van zonnestroom is in 2018 gewijzigd en leidde tot een revisie van de cijfers vanaf 2012 tot 2017. De nieuwe methode is gepubliceerd in het artikel <a href='https://www.cbs.nl/nl-nl/onze-diensten/methoden/onderzoeksomschrijvingen/aanvullende%20onderzoeksbeschrijvingen/zonnestroom'>Zonnestroom</a> dat in juni 2018 is verschenen.
+
+De berekeningswijze voor hernieuwbare energie staat in meer detail beschreven in het <a href=/""/https://www.cbs.nl/nl-nl/onze-diensten/methoden/onderzoeksomschrijvingen/aanvullende%20onderzoeksbeschrijvingen/protocol-monitoring-hernieuwbare-energie-2015-rvo-cbs/""/>Protocol Monitoring Hernieuwbare Energie (RVO.nl en CBS, 2015)</a>.
+
+
+5. MEER INFORMATIE
+
+<a href=/""/https://www.cbs.nl/nl-nl/over-ons/contact/infoservice/""/>Infoservice</a>
+
+Copyright © Centraal Bureau voor de Statistiek, Den Haag/Heerlen
+
+Verveelvoudiging is toegestaan, mits het CBS als bron wordt vermeld.";"ts=1561448126631&graphtype=Table&r=BronTechniek,Energietoepassingen,Perioden&k=Topics";"$filter=((Perioden eq '2017JJ00') or (Perioden eq '2018JJ00'))&$select=BronTechniek, Energietoepassingen, Perioden, BrutoEindverbruik_1, BrutoEindverbruikRelatief_2, VermedenVerbruik_3, VermedenVerbruikRelatief_4, VermedenEmissie_5, VermedenEmissieRelatief_6";"Table,Bar,Line";"Regulier";"CBS.";"2020-01-23T02:00:00";"2"
+"DataProperties"
+ID;Position;ParentID;Type;Key;Title;Description;ReleasePolicy;Datatype;Unit;Decimals;Default
+"0";"0";;"Dimension";"BronTechniek";"Bron/Techniek";"";;;;;
+"1";"1";;"Dimension";"Energietoepassingen";"Energietoepassingen";"";;;;;
+"2";"2";;"TimeDimension";"Perioden";"Perioden";"";"true";;;;
+"3";;;"TopicGroup";"";"Bruto eindverbruik hernieuwbare energie";"Het bruto eindverbruik van hernieuwbare energie volgt de definitie uit de EU Richtlijn Hernieuwbare Energie van 2009. Het wordt berekend als de som van 3 componenten:
+1. Bruto productie van elektriciteit uit hernieuwbare bronnen
+2. Bruto productie van verkochte warmte uit hernieuwbare bronnen
+3. Eindverbruik van energie uit bodem, buitenlucht, zon en biomassa
+Niet verkochte warmte uit hernieuwbare bronnen (bijvoorbeeld houtkachels bij huishoudens) telt als eindverbruik van hernieuwbare energie. De import en export van groene stroom telt niet mee.";;;;;
+"4";"3";"3";"Topic";"BrutoEindverbruik_1";"Bruto eindverbruik";"In deze tabel wordt als eenheid de TeraJoule (TJ) gebruikt. 
+Dit is 1 000 000 000 000 joule (een 1 met 12 nullen). Een joule is een eenheid van energie die overeenkomt met 0,24 calorie. 
+Een TJ komt overeen met 31 600 kubieke meter aardgas of 278 000 kilowattuur elektriciteit.";;"Long";"TJ";"0";"Impossible"
+"5";"4";"3";"Topic";"BrutoEindverbruikRelatief_2";"Bruto eindverbruik relatief";"Bruto eindverbruik van hernieuwbare energie als percentage van het totaal bruto energetisch eindverbruik, berekend volgens definities uit de EU Richtlijn Hernieuwbare Energie van 2009. Het totaal bruto energetisch eindverbruik is de som van drie componenten: 
+1. Het energetisch eindverbruik van de eindgebruikssectoren: industrie (exclusief raffinaderijen), huishoudens, diensten, landbouw, visserij en vervoer;
+2. Transport- en distributieverliezen van elektriciteit en warmte;
+3. Het eigen verbruik van de producenten van elektriciteit en warmte bij de productie van elektriciteit en verkochte warmte.";;"Double";"% van totaal eindverbruik energie";"2";"Impossible"
+"6";;;"TopicGroup";"";"Vermeden verbruik van fossiele energie";"Het vermeden verbruik van fossiele energie is de hoeveelheid fossiele energie (en kernenergie) die nodig geweest zou zijn als de hernieuwbare energie niet gebruikt zou zijn.
+Bij de berekening van vermeden verbruik van fossiele energie gaat het om de som van:
+1. Het vermeden verbruik van fossiele energie door de binnenlandse productie van elektriciteit, warmte en gas uit hernieuwbare bronnen.
+2. Het vermeden verbruik van fossiele energie door de op de binnenlandse markt verkochte biobrandstoffen voor het wegverkeer.
+De import en export van groene stroom telt niet mee.";;;;;
+"7";"5";"6";"Topic";"VermedenVerbruik_3";"Vermeden verbruik";"In deze tabel wordt als eenheid de TeraJoule (TJ) gebruikt. 
+Dit is 1 000 000 000 000 joule (een 1 met 12 nullen). Een joule is een eenheid van energie die overeenkomt met 0,24 calorie. 
+Een TJ komt overeen met 31 600 kubieke meter aardgas of 278 000 kilowattuur elektriciteit.";;"Long";"TJ";"0";"Impossible"
+"8";"6";"6";"Topic";"VermedenVerbruikRelatief_4";"Vermeden verbruik relatief";"Vermeden energie als percentage van het totaal binnenlands energieverbruik. Het totaal binnenlands verbruik is gedefinieerd als de hoeveelheid die in het land beschikbaar komt (invoer plus winning) minus de hoeveelheid die het land verlaat (uitvoer en brandstofbunkering voor internationaal transport) plus of min de voorraadmutatie.";;"Double";"% van totaal energieverbruik";"2";"Impossible"
+"9";;;"TopicGroup";"";"Vermeden emissie van kooldioxide (CO2)";"Emissie: Uitstoot van een stof vanuit een bron. De hoeveelheid kooldioxide die uitgestoten zou zijn, wanneer er geen gebruik zou zijn gemaakt van de betreffende hernieuwbare energiebron. Gerekend is met referentietechnologieën die gedefinieerd zijn in het Protocol Monitoring Hernieuwbare Energie (RVO.nl en CBS, 2015). Het gaat hierbij om de binnenlandse productie van hernieuwbare elektriciteit, warmte en gas. De import van groene stroom telt niet mee.
+Bij de berekening van de vermeden emissies kooldioxide wordt alleen gekeken naar de vermeden emissies bij de productie van hernieuwbare elektriciteit, warmte en gas. Er wordt niet gekeken naar de verschillen tussen hernieuwbare en fossiele energie bij de winning en omzetting van brandstoffen en bij het maken van installaties voor de productie van elektriciteit, warmte en gas.";;;;;
+"10";"7";"9";"Topic";"VermedenEmissie_5";"Vermeden emissie";"Emissie: Uitstoot van een stof vanuit een bron.
+CO2: Kooldioxide. 1 kton = 1 000 ton = 1 miljoen kg.";;"Long";"kton";"0";"Impossible"
+"11";"8";"9";"Topic";"VermedenEmissieRelatief_6";"Vermeden emissie relatief";"Vermeden emissie van kooldioxide als percentage van de totale Nederlandse CO2 emissie volgens de IPCC richtlijnen (Kyoto Protocol).
+Emissie: Uitstoot van een stof vanuit een bron.
+CO2: Kooldioxide.
+
+De cijfers voor de totale emissies van kooldioxide zijn voorlopig.";;"Double";"% van totale CO2 emissie";"2";"Impossible"
+"BronTechniek"
+Key;Title;Description
+"T001028 ";"Totaal energiebronnen";"Het totaal van alle energiebronnen van hernieuwbare energie."
+"E006587 ";"Waterkracht";"Energie, opgewekt met behulp van vallend of stromend water."
+"E006588 ";"Totaal windenergie";"Energie, opgewekt met een windmolen of windturbine.
+Windmolens staan op land, in binnenwateren of op zee. Windmolens in binnenwateren worden gerekend bij windenergie op land."
+"E006637 ";"Windenergie op land";"Windenergie afkomstig van windmolens op land. 
+
+Ook de windmolens geplaatst in binnenwateren, zoals het IJsselmeer, vallen hieronder."
+"E006638 ";"Windenergie op zee";"Energie afkomstig van windmolens op zee.
+
+In het najaar van 2006 is het eerste windpark op zee in gebruik genomen."
+"E006589 ";"Totaal zonne-energie";"Zonnestraling gebruikt voor de productie van warm water of elektriciteit door zonnecollectoren of zonnecellen. 
+Zonne-energie die direct wordt benut en niet actief wordt verplaatst door een systeem (passieve zonne-energie) wordt niet meegenomen. 
+
+Voorbeelden van passieve zonne-energie zijn verwarming van een gebouw of kas door de zon via een raam."
+"E006590 ";"Zonnestroom";"Zonnestraling omgezet in elektriciteit."
+"E006591 ";"Totaal zonnewarmte";"Zonnestraling omgezet in warmte."
+"E006645 ";"Zonnewarmte, afgedekte systemen <= 6m2";"Afgedekte zonnewarmtesystemen minder dan 6 m² zijn ook bekend als zonneboilers.
+
+Systemen waarbij water wordt verwarmd met zonne-energie in een afgedekte collector. Het water stroomt daarbij door buizen die met een glasplaat zijn afgedekt. Het opgewarmde water wordt opgeslagen in een voorraadvat. Voornamelijk voor toepassingen van warm tapwater in individuele huishoudens."
+"E006646 ";"Zonnewarmte, afgedekte systemen > 6m2";"Systemen, groter dan 6 m2, waarbij water wordt verwarmd met zonne-energie in een afgedekte collector. 
+
+Het water stroomt daarbij door buizen die met een glasplaat zijn afgedekt. Voornamelijk voor grotere toepassingen, zoals utiliteitsbouw (kantoren) en groepen woningen."
+"E006647 ";"Zonnewarmte, onafgedekte systemen";"Systemen waarbij meestal water wordt verwarmd met zonne-energie in een onafgedekte collector.
+
+Het water stroomt daarbij door slangen. Dit systeem wordt voornamelijk toegepast in zwembaden. "
+"E006594 ";"Totaal aardwarmte en bodemenergie";"Aardwarmte en bodemenergie is alle energie die afkomstig is van onder het vaste aardoppervlak.
+
+Er wordt onderscheid gemaakt in aardwarmte en bodemenergie. De grens ligt bij 500 meter. Bij aardwarmte gaat het alleen om de warmte en bij bodemenergie kan zowel de warmte als de koude uit de bodem benut worden."
+"E006595 ";"Aardwarmte";"Aardwarmte is bodemenergie die afkomstig is van een diepte van meer dan 500 m.
+
+Bodemenergie beneden deze diepte is afkomstig van processen in het binnenste van de aarde. Ook bekend als diepe bodemenergie of geothermische energie. Aardwarmte wordt doorgaans benut met behulp van een warmtewisselaar. Een warmtewisselaar is een apparaat waarin twee stromen samenkomen met verschillende temperaturen waarbij warmteoverdracht plaatsvindt van de stroom met de hoge temperatuur naar de stroom met de lage temperatuur. Een warmtewisselaar heeft in tegenstelling tot een warmtepomp heel weinig hulpenergie nodig."
+"E006596 ";"Totaal bodemenergie";"Warmte afkomstig van uitwisseling van energie met de atmosfeer.
+
+Bodemenergie staat ook bekend als ondiepe bodemenergie en/of warmte/koudeopslag."
+"E006651 ";"Bodemwarmte, totaal";"Bodemenergie in de vorm van warmte.
+
+Bodemwarmte staat ook wel bekend als ondiepe bodemenergie en is een onderdeel van warmte/koudeopslag."
+"E006597 ";"Bodemwarmte, warmtepompen";"Bodemenergie in de vorm van warmte, benut met behulp van warmtepompen.
+
+Een warmtepomp is een apparaat waarmee warmte op een lage temperatuur door toevoer van hulp-energie (vaak elektriciteit) wordt omgezet in warmte bij hoge temperatuur. De werking komt overeen met die van een koelkast. Ook daar wordt warmte van lage temperatuur (in de koelkast) omgezet naar warmte van hoge temperatuur (buiten de koelkast)."
+"E006654 ";"Bodemwarmte, zonder warmtepompen";"Bodemenergie in de vorm van warmte, benut zonder de hulp van warmtepompen.
+
+Vaak gaat het om voorverwarming van ventilatielucht."
+"E006598 ";"Bodemkoude";"Bodemenergie in de vorm van koude.
+
+Het gaat hierbij vaak om het oppompen van koud water voor de koeling van gebouwen, zonder gebruik te maken van een (omkeerbare) warmtepomp."
+"E006656 ";"Buitenluchtwarmte";"Warmte uit de buitenlucht. 
+
+Deze wordt benut voor verwarming van woningen en utiliteitsgebouwen door gebruik te maken van een warmtepomp. Een warmtepomp is een apparaat waarmee warmte op een lage temperatuur door toevoer van hulp-energie (vaak elektriciteit) wordt omgezet in warmte bij hoge temperatuur. De werking komt overeen met die van een koelkast. Ook daar wordt warmte van lage temperatuur (in de koelkast) omgezet naar warmte van hoge temperatuur (buiten de koelkast)."
+"E006566 ";"Totaal biomassa";"Plantaardig of dierlijk materiaal van recente oorsprong in gebruik voor productie van energie.
+
+Voorbeelden zijn hout, mest en afval uit de voedselverwerkende industrie."
+"E006661 ";"Afvalverbrandingsinstallaties";"Het verbranden van afval door afvalverwerkingsinstallaties.
+
+Alleen de energie geproduceerd door het verbranden van het deel van het afval dat van planten en dieren afkomstig is telt mee bij de hernieuwbare energie."
+"E006662 ";"Bij- en meestoken biomassa in centrales";"Bij- en meestoken van biomassa in elektriciteitscentrales.
+
+Een voorbeeld is het meestoken van vaste biomassa in steenkolencentrales. Het gaat hierbij vaak om houtpellets. Pellets zijn geperste brokjes hout."
+"E006664 ";"Totaal biomassa huishoudens";"Het verbranden van hout binnen huishoudens door middel van een houtkachel en het verbruik van houtskool.
+"
+"E006665 ";"Biomassa huishoudens, openhaarden";"Het verbruik van hout door huishoudens in een openhaard.
+"
+"E006666 ";"Biomassa huishoudens, inzethaarden";"Het verbruik van hout door huishoudens in een inzethaard.
+
+Inzethaard: Afsluitbare houtgestookte inbouw-kachel."
+"E006667 ";"Biomassa huishoudens, houtkachels";"Het verbruik van hout door huishoudens in een vrijstaande houtkachel."
+"E007204 ";"Biomassa huishoudens, pelletkachels";"Het verbruik van hout door huishoudens in een vrijstaande pelletkachel. "
+"E006668 ";"Biomassa huishoudens, houtskoolverbruik";"Het verbruik van houtskool door huishoudens. Het betreft hier vooral het verbruik voor de barbecue.
+
+Het vermeden verbruik van fossiele energie en de vermeden emissies van CO2 door het verbruik van houtskool zijn nihil."
+"E006669 ";"Totaal biomassaketels bedrijven";"Het verbranden van vaste en vloeibare biomassa voor decentrale elektriciteits- en warmteproductie.
+
+Voorbeelden zijn verbranding van hout en papierslib."
+"E006670 ";"Biomassaketels bedrijven, elektriciteit";"Biomassaverbranding met decentrale elektriciteitsopwekking. 
+
+Het gaat hierbij om het verbranden van vaste en vloeibare biomassa voor elektriciteitsproductie al dan niet in combinatie met warmteproductie."
+"E006671 ";"Biomassaketels bedrijven, alleen warmte";"Het verbranden van vaste en vloeibare biomassa uitsluitend voor warmteproductie.
+
+Het betreft meestal houtkachels en houtketels bij bedrijven die warmte opwekken. 
+"
+"E006583 ";"Totaal biogas";"Gas ontstaan door vergisting van organisch materiaal. 
+
+Voorbeelden daarvan zijn slib uit afvalwaterzuivering, gestort afval(stortgas), groente, fruit en tuinafval (GFT), mest, mais en plantaardige reststromen uit de landbouw, agro-industrie en handel."
+"E006673 ";"Biogas uit stortplaatsen";"Uit het organische deel van gestort afval ontstaat stortgas. Een deel hiervan wordt nuttig gebruikt."
+"E006674 ";"Biogas rioolwaterzuiveringsinstallaties";"Actieve vergisting van organisch materiaal in rioolwaterzuiveringsinstallaties."
+"E006675 ";"Biogas, co-vergisting van mest";"Vergisting van mest in combinatie met ander plantaardig materiaal. 
+
+Vaak maar niet altijd uitgevoerd door landbouwbedrijven. Tot en met 2004 opgenomen bij 'Overige biogas'. Vergisting van alleen mest (monovergisting) valt ook hieronder."
+"E006586 ";"Overig biogas";"Het gaat hierbij voornamelijk om vergisting van afval van plantaardige oorsprong in de industrie en om vergisting van groente- fruit- en tuinafval (GFT). 
+
+Tot en met 2004 inclusief 'Biogas, co-vergisting van mest'."
+"E006677 ";"Vloeibare biotransportbrandstof, totaal";"Totaal vloeibare biotransportbrandstoffen: Brandstoffen gemaakt uit plantaardig of dierlijk materiaal voor vervoer en mobiele werktuigen. 
+
+Het gaat hierbij om de biobrandstoffen die worden verkocht op de Nederlandse markt, veelal bijgemengd bij gewone benzine en diesel.
+
+In deze tabel worden vanaf 2011 biobrandstoffen uitgesloten als ze niet voldoen aan de duurzaamheidscriteria uit de EU-Richtlijn Hernieuwbare Energie. Of er is voldaan aan de criteria wordt bepaald op basis van informatie van de Nederlandse Emissie-autoriteit (NEa). In de StatLine tabellen 'Biomassa, verbruik per techniek' en 'Vloeibare biotransportbrandstoffen' worden daarentegen alle biobrandstoffen meegenomen. Daardoor kan de verbruikte hoeveelheid biobrandstof in deze tabel afwijken van de verbruikte hoeveelheid in de andere tabellen.
+
+Vloeibare biotransportbrandstoffen voor het wegverkeer vallen in deze tabel onder de energietoepassing 'vervoer'. Vloeibare biotransportbrandstoffen voor mobiele werktuigen in de bouw en de landbouw vallen in deze tabel onder de energietoepassing 'warmte'. Deze indeling komt voort uit de EU-richtlijn Hernieuwbare Energie. 
+"
+"E006678 ";"Biobenzine";"Biobrandstoffen die geschikt zijn om te gebruiken in benzinemotoren, meestal na bijmenging in gewone benzine. Een veel gebruikte vorm van biobenzine is bio-ethanol."
+"E006679 ";"Biodiesel";"Biobrandstoffen die geschikt zijn om te gebruiken in dieselmotoren, meestal na bijmenging in gewone diesel. HVO (hydrotreated vegetable oil) valt ook onder biodiesel."
+"Energietoepassingen"
+Key;Title;Description
+"E007022 ";"Totaal energietoepassingen";""
+"E006607 ";"Elektriciteit";"Stroom van elektronen die wordt gebruikt om bijvoorbeeld lampen te laten branden of wasmachines te laten draaien. Elektronen zijn elementaire deeltjes in een atoom met een negatieve lading, die door een spanningsverschil gaan stromen."
+"E006608 ";"Warmte";"Alle verbruik van energie anders dan voor elektriciteit en vervoer.
+In de praktijk gaat het vooral om warmte, maar het kan ook gaan om het verbruik van energie voor de aandrijving van machines, zoals bijvoorbeeld tractoren, vissersboten en mobiele werktuigen in de bouw."
+"E007028 ";"Vervoer";"Vervoer over weg, spoor, water en lucht.
+Het gebruik van brandstoffen in vissersboten, tractoren en mobiele werktuigen in de bouw valt niet onder vervoer, maar onder warmte. Dit volgt uit definities in internationale energiestatistieken."
+"Perioden"
+Key;Title;Description;Status
+"1990JJ00";"1990";"";"Definitief"
+"1991JJ00";"1991";"";"Definitief"
+"1992JJ00";"1992";"";"Definitief"
+"1993JJ00";"1993";"";"Definitief"
+"1994JJ00";"1994";"";"Definitief"
+"1995JJ00";"1995";"";"Definitief"
+"1996JJ00";"1996";"";"Definitief"
+"1997JJ00";"1997";"";"Definitief"
+"1998JJ00";"1998";"";"Definitief"
+"1999JJ00";"1999";"";"Definitief"
+"2000JJ00";"2000";"";"Definitief"
+"2001JJ00";"2001";"";"Definitief"
+"2002JJ00";"2002";"";"Definitief"
+"2003JJ00";"2003";"";"Definitief"
+"2004JJ00";"2004";"";"Definitief"
+"2005JJ00";"2005";"";"Definitief"
+"2006JJ00";"2006";"";"Definitief"
+"2007JJ00";"2007";"";"Definitief"
+"2008JJ00";"2008";"";"Definitief"
+"2009JJ00";"2009";"";"Definitief"
+"2010JJ00";"2010";"";"Definitief"
+"2011JJ00";"2011";"";"Definitief"
+"2012JJ00";"2012";"";"Definitief"
+"2013JJ00";"2013";"";"Definitief"
+"2014JJ00";"2014";"";"Definitief"
+"2015JJ00";"2015";"";"Definitief"
+"2016JJ00";"2016";"";"Definitief"
+"2017JJ00";"2017";"";"Definitief"
+"2018JJ00";"2018";"";"Definitief"

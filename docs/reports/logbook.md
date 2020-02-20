@@ -29,4 +29,4 @@ Then you can make a bar chart of it with on the y- axis the efficiency and on th
 
 **RQ3**
 | Analysis method | Python package | Function | Function description | Inputs | Outputs |
-| bar charts | matplotlib | Grouped bar chart with labels | It will make bars of both the wooden stove and the pallet stove with different criteria | Wooden stove emissions and Pallet stove emissions | Grouped bar chart with labels |
+| bar charts | matplotlib | Grouped bar chart with labels | It will make bars of both the wooden stove and the pallet stove with different criteria | Wooden stove emissions and Pallet stove emissions | Grouped bar chart with labels ||

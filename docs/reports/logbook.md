@@ -26,3 +26,7 @@ Possible methods: Analysing the data from the charts and putting them in a graph
 **RQ4 Which energy source was the most efficient in 2018 in terms of producing energy with the highest prevention of CO2 emission?** 
 To answer the question, one must calculate how much CO2 is emitted per kilowatt-hour of energy ( of a particular renewable source).
 Then you can make a bar chart of it with on the y- axis the efficiency and on the x-axis the different energy sources. 
+
+**RQ3**
+| Analysis method | Python package | Function | Function description | Inputs | Outputs |
+| bar charts | matplotlib | Grouped bar chart with labels | It will make bars of both the wooden stove and the pallet stove with different criteria | Wooden stove emissions and Pallet stove emissions | Grouped bar chart with labels |

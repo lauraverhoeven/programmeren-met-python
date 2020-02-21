@@ -32,4 +32,5 @@ Then you can make a bar chart of it with on the y- axis the efficiency and on th
 | Analysis method | Python package | Function | Function description | Inputs | Outputs |
 | ------ | ------ | ------ | ------ | ------ | ------ | 
 | bar charts | matplotlib | Grouped bar chart with labels | It will bars make of both the wooden stove and the pallet stove with different criteria | Wooden stove emissions and Pallet stove emissions | Grouped bar charts with labels |
-| bar plots | matplotlib | bar | This makes a bar plot of the data | Sequence of scalars | BarContainer (a container with all the bars) ||
+| bar plots | matplotlib | bar | This makes a bar plot of the data | Sequence of scalars | BarContainer (a container with all the bars) |
+| bar plots | pypi.org | barplots | Make barplots from multi-indexed dataframes | Sequence of scalars (like width, height, orientation) | A bar plot ||

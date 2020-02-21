@@ -27,13 +27,9 @@ Possible methods: Analysing the data from the charts and putting them in a graph
 To answer the question, one must calculate how much CO2 is emitted per kilowatt-hour of energy ( of a particular renewable source).
 Then you can make a bar chart of it with on the y- axis the efficiency and on the x-axis the different energy sources. 
 
-**RQ3**
-| Analysis method | Python package | Function | Function description | Inputs | Outputs |
-| ------ | ------ | ------ | ------ | ------ | ------ |
-| bar charts | matplotlib | [Grouped bar chart with labels](https://matplotlib.org/gallery/lines_bars_and_markers/barchart.html#sphx-glr-gallery-lines-bars-and-markers-barchart-py) | It will make bars of both the wooden stove and the pallet stove with different criteria | Wooden stove emissions and Pallet stove emissions | Grouped bar chart with labels ||
-
-
+**Possible Python Packages to Methods**
 | Analysis method | Python package | Function | Function description | Inputs | Outputs |
 | ------ | ------ | ------ | ------ | ------ | ------ |
 | bar charts | matplotlib | Grouped bar chart with labels | It will make bars of both the wooden stove and the pallet stove with different criteria | Wooden stove emissions and Pallet stove emissions | Grouped bar chart with labels | 
-| cell | cell | 
+| bar plots | matplotlib | bar | This makes a bar plot of the data | Sequence of scalars | BarContainer (a container with all the bars)
+| bar plots | pypi.org | barplots | Make barplots from multi-indexed dataframes | Multiple scalars (like width, height, orientation) | a barplot |

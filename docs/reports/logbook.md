@@ -27,7 +27,9 @@ Possible methods: Analysing the data from the charts and putting them in a graph
 To answer the question, one must calculate how much CO2 is emitted per kilowatt-hour of energy ( of a particular renewable source).
 Then you can make a bar chart of it with on the y- axis the efficiency and on the x-axis the different energy sources. 
 
-**Possible Python Packages to Methods**
+
+
+# Possible Python Packages to Methods
 
 | Analysis method | Python package | Function | Function description | Inputs | Outputs |
 | ------ | ------ | ------ | ------ | ------ | ------ | 

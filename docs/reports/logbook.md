@@ -42,4 +42,7 @@ Then you can make a bar chart of it with on the y- axis the efficiency and on th
 |Bar chart| Matplotlib | Bar charts | One can see the efficiency (how much CO2 is emitted per kilowatt-hour of energy ( of a particular renewable source)) | different energy sources and efficiency | Bar Chart|
 | 'Fivethirtyeight' style sheet | Matplotlib | line plot | a way to see which energy sources have had the highest efficiency (least CO2/ kWh) through the years | efficiency, several years (X- axis), several energy sources | multi line plot| | 
 
-
+| header | header |
+| ------ | ------ |
+| cell | cell |
+| cell | cell | 

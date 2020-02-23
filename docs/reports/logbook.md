@@ -39,6 +39,6 @@ Then you can make a bar chart of it with on the y- axis the efficiency and on th
 | Creating a legend | matplotlib | [pyplot.legend](https://matplotlib.org/3.1.1/api/_as_gen/matplotlib.pyplot.legend.html) | Creates a legend | Sequence of strings | A legend |
 | Showing the resulting figure(s) | matplotlib | [pyplot.show](https://matplotlib.org/3.1.1/api/_as_gen/matplotlib.pyplot.show.html) | None | None |
 | Reading the data file | pandas | [read_csv](https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.read_csv.html) | Read comme-seperated values into DataFrame | Filepath, seperator, header | DataFrame |
-| Filtering subsets from the data | pandas | [dataframe.filter](https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.filter.html) | Creates subsets from the dataframe rows or columns according to the specified index labels | Items, like: “”, regex, axis | Same type as input ||
+| Filtering subsets from the data | pandas | [dataframe.filter](https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.filter.html) | Creates subsets from the dataframe rows or columns according to the specified index labels | Items, like: ..., regex, axis | Same type as input ||
 
 

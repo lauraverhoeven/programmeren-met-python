@@ -31,14 +31,14 @@ Then you can make a bar chart of it with on the y- axis the efficiency and on th
 
 | Analysis method | Python package | Function | Function description | Inputs | Outputs |
 | ------ | ------ | ------ | ------ | ------ | ------ | 
-| Bar charts | matplotlib | [bar](https://matplotlib.org/3.1.1/gallery/lines_bars_and_markers/barchart.html) | Makes a bar chart of the data | Sequence of scalars (like width, height, orientation) | Grouped bar charts with labels |
-| Bar plots | matplotlib | [bar](https://matplotlib.org/3.1.1/api/_as_gen/matplotlib.pyplot.bar.html) | This makes a bar plot of the data | Sequence of scalars (like width, height, orientation) | BarContainer |
+| Bar chart | matplotlib | [pyplot.bar](https://matplotlib.org/3.1.1/api/_as_gen/matplotlib.pyplot.bar.html) | Makes a bar chart of the data | Sequence of scalars (like width, height, orientation) | BarContainer |
+| Bar plots | pypi | [barplots](https://pypi.org/project/barplots/) | This makes a bar plot of the data | Sequence of scalars (like width, height, orientation) | BarContainer |
 | Bar plots | pypi.org | [barplots](https://pypi.org/project/barplots/) | Make barplots from multi-indexed dataframes | Sequence of scalars (like width, height, orientation) | A bar plot |
-| Stacked bar graph | matplotlib | [bar](https://matplotlib.org/3.1.1/gallery/lines_bars_and_markers/bar_stacked.html) | This makes a stacked bar graph of the data | Sequence of scalars (like width, height, orientation) | BarContainer  |
-| Grouped bar chart with labels | matplotlib| [bar](https://matplotlib.org/3.1.1/gallery/lines_bars_and_markers/barchart.html) | This makes a grouped bar chart of the data | Sequence of scalars (like width, height, orientation) | BarContainer ||
-
-
-
-| 'Fivethirtyeight' style sheet | Matplotlib | line plot | a way to see which energy sources have had the highest efficiency (least CO2/ kWh) through the years | efficiency, several years (X- axis), several energy sources | multi line plot| | 
+| Stacked bar chart | matplotlib | [pyplot.bar](https://matplotlib.org/3.1.1/gallery/lines_bars_and_markers/bar_stacked.html) | Creates a figure with axis | Sequence of scalars (like width, height, orientation) | A figure with axis to which bars can be added |
+| Creating a line chart | matplotlib | [pyplot.plot](https://matplotlib.org/3.1.1/api/_as_gen/matplotlib.pyplot.plot.html) | Adds a line to a line chart figure | x-axis and y-axis values or indexable data | A list of Line2D objects|
+| Creating a legend | matplotlib | [pyplot.legend](https://matplotlib.org/3.1.1/api/_as_gen/matplotlib.pyplot.legend.html) | Creates a legend | Sequence of strings | A legend |
+| Showing the resulting figure(s) | matplotlib | [pyplot.show](https://matplotlib.org/3.1.1/api/_as_gen/matplotlib.pyplot.show.html) | None | None |
+| Reading the data file | pandas | [read_csv](https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.read_csv.html) | Read comme-seperated values into DataFrame | Filepath, seperator, header | DataFrame |
+| Filtering subsets from the data | pandas | [dataframe.filter](https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.filter.html) | Creates subsets from the dataframe rows or columns according to the specified index labels | Items, like: “”, regex, axis | Same type as input ||
 
 

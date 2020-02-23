@@ -31,18 +31,14 @@ Then you can make a bar chart of it with on the y- axis the efficiency and on th
 
 | Analysis method | Python package | Function | Function description | Inputs | Outputs |
 | ------ | ------ | ------ | ------ | ------ | ------ | 
-| bar charts | matplotlib | Grouped bar chart with labels | It will bars make of both the wooden stove and the pallet stove with different criteria | Wooden stove emissions and Pallet stove emissions | Grouped bar charts with labels |
-| bar plots | matplotlib | bar | This makes a bar plot of the data | Sequence of scalars | BarContainer (a container with all the bars) |
-| bar plots | pypi.org | barplots | Make barplots from multi-indexed dataframes | Sequence of scalars (like width, height, orientation) | A bar plot ||
+| Bar charts | matplotlib | [bar](https://matplotlib.org/3.1.1/gallery/lines_bars_and_markers/barchart.html) | Makes a bar chart of the data | Sequence of scalars (like width, height, orientation) | Grouped bar charts with labels |
+| Bar plots | matplotlib | [bar](https://matplotlib.org/3.1.1/api/_as_gen/matplotlib.pyplot.bar.html) | This makes a bar plot of the data | Sequence of scalars (like width, height, orientation) | BarContainer |
+| Bar plots | pypi.org | [barplots](https://pypi.org/project/barplots/) | Make barplots from multi-indexed dataframes | Sequence of scalars (like width, height, orientation) | A bar plot |
+| Stacked bar graph | matplotlib | [bar](https://matplotlib.org/3.1.1/gallery/lines_bars_and_markers/bar_stacked.html) | This makes a stacked bar graph of the data | Sequence of scalars (like width, height, orientation) | BarContainer  |
+| Grouped bar chart with labels | matplotlib| [bar](https://matplotlib.org/3.1.1/gallery/lines_bars_and_markers/barchart.html) | This makes a grouped bar chart of the data | Sequence of scalars (like width, height, orientation) | BarContainer ||
 
-| Analysis method | Python package | Function | Function description | Inputs | Outputs |
-| ------ | ------ | ------ | ------ | ------ | ------ | 
-| Stacked Bar Graph | Matplotlib | Bar plot| production of energy against CO2 reduction (on top of each other for overview) | total CO2 production/reduction and energy production, all per energy source| Stacked Bar Graph |
-|Grouped Bar Chart with Labels| Matplotlib | Bar plot | production of energy against CO2 reduction (on top of each other for overview) | total CO2 production/reduction and energy production, all per energy source| Grouped bar chart |
-|Bar chart| Matplotlib | Bar charts | One can see the efficiency (how much CO2 is emitted per kilowatt-hour of energy ( of a particular renewable source)) | different energy sources and efficiency | Bar Chart|
+
+
 | 'Fivethirtyeight' style sheet | Matplotlib | line plot | a way to see which energy sources have had the highest efficiency (least CO2/ kWh) through the years | efficiency, several years (X- axis), several energy sources | multi line plot| | 
 
-| header | header |
-| ------ | ------ |
-| cell | cell |
-| cell | cell | 
+

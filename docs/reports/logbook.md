@@ -28,7 +28,17 @@ To answer the question, one must calculate how much CO2 is emitted per kilowatt-
 Then you can make a bar chart of it with on the y- axis the efficiency and on the x-axis the different energy sources. 
 
 
-
+Start on the code for third question
+stove_sort = input("Which stove? Wooden or Pallet? ")
+if stove_sort == "Wooden":
+    create a bargraph
+    display bargraph
+elif stove_sort == "Pallet":
+    create another bargraph
+    disply bargraph
+else:
+    print("Wrong input, try again")
+Display options
 # Possible Python Packages to Methods
 
 | Analysis method | Python package | Function | Function description | Inputs | Outputs |

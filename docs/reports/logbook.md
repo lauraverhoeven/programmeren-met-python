@@ -27,18 +27,6 @@ Possible methods: Analysing the data from the charts and putting them in a graph
 To answer the question, one must calculate how much CO2 is emitted per kilowatt-hour of energy ( of a particular renewable source).
 Then you can make a bar chart of it with on the y- axis the efficiency and on the x-axis the different energy sources. 
 
-
-Start on the code for third question
-stove_sort = input("Which stove? Wooden or Pallet? ")
-if stove_sort == "Wooden":
-    create a bargraph
-    display bargraph
-elif stove_sort == "Pallet":
-    create another bargraph
-    disply bargraph
-else:
-    print("Wrong input, try again")
-Display options
 # Possible Python Packages to Methods
 
 | Analysis method | Python package | Function | Function description | Inputs | Outputs |
@@ -53,4 +41,5 @@ Display options
 | Reading the data file | pandas | [read_csv](https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.read_csv.html) | Read comme-seperated values into DataFrame | Filepath, seperator, header | DataFrame |
 | Filtering subsets from the data | pandas | [dataframe.filter](https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.filter.html) | Creates subsets from the dataframe rows or columns according to the specified index labels | Items, like: ..., regex, axis | Same type as input ||
 
-
+The file [main.py](src/main.py) is a skeleton implementation of the planned main module. 
+Planned additional files are 

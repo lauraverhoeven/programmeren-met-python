@@ -41,5 +41,8 @@ Then you can make a bar chart of it with on the y- axis the efficiency and on th
 | Reading the data file | pandas | [read_csv](https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.read_csv.html) | Read comme-seperated values into DataFrame | Filepath, seperator, header | DataFrame |
 | Filtering subsets from the data | pandas | [dataframe.filter](https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.filter.html) | Creates subsets from the dataframe rows or columns according to the specified index labels | Items, like: ..., regex, axis | Same type as input ||
 
+# Program flow
+
+We have made an [activity diagram](results/figures/activity_diagram.jpeg) that gives a summary of the program flow.
 The file [main.py](src/main.py) is a skeleton implementation of the planned main module. 
 Planned additional files are 

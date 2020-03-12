@@ -6,7 +6,7 @@ import wind_power as wp
 import matplotlib
 
 # path to file
-cbsdata = "raw_data_renewable_energy.csv"
+cbsdata = "../data/raw/raw_data_renewable_energy.csv"
 
 # load CBS data set
 try:

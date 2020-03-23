@@ -67,3 +67,7 @@ while True:
         break
     else:
         print("Choice was not recognized, or invalid input. Please try again")
+<<<<<<< HEAD
+=======
+        
+>>>>>>> a5df6ddb330b85e764e808e0baf6b4166ea4f05d

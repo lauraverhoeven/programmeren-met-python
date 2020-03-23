@@ -1,12 +1,13 @@
 # main program file
 
 # import the necessary modules
+import demo
 import data_handling as dh
 import wind_power as wp
 import matplotlib
 
 # path to file
-cbsdata = "raw_data_renewable_energy.csv"
+cbsdata = "../data/raw/raw_data_renewable_energy.csv"
 
 # load CBS data set
 try:
@@ -25,28 +26,37 @@ while True:
     3\tWhat is the difference in usage of wood in a household regarding a freestanding wooden stove and a freestanding pallet stove?    
     4\tWhich energy source was the most efficient in 2018 in terms of producing energy with the highest prevention of CO2 emission?    
     5\tExit the program.\n
-    """)    
+    """)
 
 # evaluate user choice and proceed accordingly
     if choice == "0":
         print("Create demo bar chart: total avoided use of fossil energy due to wind power over the period 2010-2018.")
 
         # call function to make bar chart
-        barplot = wp.wind_energy_plot(dataset)
+        barplot = demo.wind_energy_plot(dataset)
 
         # make python show the plot
         matplotlib.pyplot.show()
-    
+
     elif choice == "1":
-        wind_power = input("Which kind of wind power do you want to analyse? ('at sea' or 'on land') ")
+        wind_power = input(
+            "Which kind of wind power do you want to analyse? ('at sea' or 'on land') ")
         period_rq1 = input("Which period do you want to analyse? (2010-2018) ")
         print("To do: create bar graph using the right kind of wind power and period.")
+
+        # call function to make bar chart
+        barplot = wp.wind_energy_plot(dataset)
+
+        matplotlib.pyplot.show()
+
     elif choice == "2":
-        energy_source = input("Which kind of energy source do you want to analyse? ")
+        energy_source = input(
+            "Which kind of energy source do you want to analyse? ")
         period_rq2 = input("Which period do you want to analyse? (1990-2018) ")
         print("To do: create line chart using the right kind of period and energy source.")
     elif choice == "3":
-        stove = input("Which kind of stove do you want to analyse? ('wooden' or 'pallet') ")
+        stove = input(
+            "Which kind of stove do you want to analyse? ('wooden' or 'pallet') ")
         period_rq3 = input("Which period do you want to analyse? ")
         print("To do: create bar graph using the right kind of stove and period.")
     elif choice == "4":
@@ -55,6 +65,5 @@ while True:
     elif choice == "5":
         print("Thank you for your participation. Bye!")
         break
-    else: 
+    else:
         print("Choice was not recognized, or invalid input. Please try again")
-        

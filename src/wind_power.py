@@ -7,7 +7,54 @@ import numpy as np
 import matplotlib.pyplot as plt
 
 
-def wind_energy_plot(data):
+def get_subset_dataframe_total(data, sort=0):
+    # getting a subset of the data, the total avoided use of fossil energy (absolute and relative) due to wind power
+
+    periods = ["2010JJ00",
+               "2011JJ00",
+               "2012JJ00",
+               "2013JJ00",
+               "2014JJ00",
+               "2015JJ00",
+               "2016JJ00",
+               "2017JJ00",
+               "2018JJ00"]
+
+    # total energy of wind power column
+    total_energy_applicability = "E007022"
+    # total wind power
+    total_wind_power = "E006588"
+
+    # subset of data total wind power and total energy applicability
+    data_total = data[(data["BronTechniek"] == total_wind_power) & (
+        data["Energietoepassingen"] == total_energy_applicability)]
+
+    # subset of the data with only these periods
+    data_total_periods = data_total[data_total["Perioden"].isin(periods)]
+
+    # change the data to the correct type
+    data_total_periods["VermedenVerbruik_3"] = data_total_periods["VermedenVerbruik_3"].astype(
+        int)
+    data_total_periods["VermedenVerbruikRelatief_4"] = data_total_periods["VermedenVerbruikRelatief_4"].astype(
+        float)
+
+    # get the new subset of the total avoided use of fossil energy and relative avoided use of fossil energy with these periods
+    if sort == 0:
+        data_subset = pd.DataFrame(
+            {'Absolutely': data_total_periods["VermedenVerbruik_3"].tolist()}, index=periods)
+    elif sort == 1:
+        data_subset = pd.DataFrame(
+            {'Relatively': data_total_periods["VermedenVerbruikRelatief_4"].tolist()}, index=periods)
+    else:
+        raise ValueError("Incorrect value, put in correct value (0 or 1).")
+
+    # get the dataframe
+    return data_subset
+
+# getting subset of the data, avoided use of fossil energy (with a choice whether you want the absolute or the relative data) due to wind power on land and at sea.
+
+
+def get_subset_dataframe_parts(data, sort=0):
     periods = ["2010JJ00",
                "2011JJ00",
                "2012JJ00",
@@ -20,10 +67,8 @@ def wind_energy_plot(data):
 
     # column wind power at sea
     wind_power_sea = "E006637"
-
     # column wind power on land
     wind_power_land = "E006638"
-
     # total energy of wind power column
     total_energy_applicability = "E007022"
 
@@ -42,22 +87,57 @@ def wind_energy_plot(data):
         float)
     data_land_periods["VermedenVerbruikRelatief_4"] = data_land_periods["VermedenVerbruikRelatief_4"].astype(
         float)
-
-    # subset data frame to get the avoided use relative
-    data_sea_periods_avoided_relative = data_sea_periods[[
-        "Perioden", "VermedenVerbruikRelatief_4"]]
-    data_land_periods_avoided_relative = data_land_periods[[
-        "Perioden", "VermedenVerbruikRelatief_4"]]
+    data_sea_periods["VermedenVerbruik_3"] = data_sea_periods["VermedenVerbruik_3"].astype(
+        int)
+    data_land_periods["VermedenVerbruik_3"] = data_land_periods["VermedenVerbruik_3"].astype(
+        int)
 
     # make a new dataframe of the two dataframes, make a list of it to be able to get them next to each other,
-    data_total_periods_avoided_relative = pd.DataFrame(
-        {'Wind power at sea': data_sea_periods_avoided_relative["VermedenVerbruikRelatief_4"].tolist(), 'Wind power on land': data_land_periods_avoided_relative["VermedenVerbruikRelatief_4"].tolist()}, index=periods)
-    print(data_total_periods_avoided_relative)
+    if sort == 0:
+        data_total_periods_avoided = pd.DataFrame({'Wind power at sea': data_sea_periods["VermedenVerbruik_3"].tolist(
+        ), 'Wind power on land': data_land_periods["VermedenVerbruik_3"].tolist()}, index=periods)
+    elif sort == 1:
+        data_total_periods_avoided = pd.DataFrame(
+            {'Wind power at sea': data_sea_periods["VermedenVerbruikRelatief_4"].tolist(), 'Wind power on land': data_land_periods["VermedenVerbruikRelatief_4"].tolist()}, index=periods)
+    else:
+        raise ValueError("Incorrect value, put in a correct value (0 or 1).")
 
-    barchart = data_total_periods_avoided_relative.plot.bar(
-        rot=0, title="Total avoided use of fossil energy relatively", color=['#0077be', '#7ec850'], width=0.8)
+    # get the dataframe
+    return data_total_periods_avoided
+
+
+def bar_graph_total(dataframe, sort_graph=0):
+    # Make a bar graph of the total avoided use of fossil energy due to the total wind power (choice between relatively and absolutely)
+    if sort_graph == 0:
+        graph = "absolutely"
+    elif sort_graph == 1:
+        graph = "relatively"
+    else:
+        raise ValueError("Incorrect value, put in correct value (0 or 1).")
+
+    barchart = dataframe.plot.bar(
+        rot=0, title=f"Total {graph} avoided use of fossil energy due to wind power", color="#121846", width=0.8)
     barchart.set_xlabel("Periods")
-    barchart.set_ylabel("Total relative avoided use of fossil energy")
+    barchart.set_ylabel(f"Total {graph} avoided use of fossil energy")
+    barchart.set_xticklabels(
+        ["2010", "2011", "2012", "2013", "2014", "2015", "2016", "2017", "2018"])
+
+    return barchart
+
+
+def wind_energy_plot(data, sort_graph=0):
+    # Make a bar graph of the total avoided use of fossil energy due to the wind power, with subdivisions on land and at sea (choice between relatively and absolutely)
+    if sort_graph == 0:
+        graph = "absolutely"
+    elif sort_graph == 1:
+        graph = "relatively"
+    else:
+        raise ValueError("Incorrect value, put in correct value (0 or 1).")
+
+    barchart = data.plot.bar(
+        rot=0, title=f"Total {graph} avoided use of fossil energy", color=['#0077be', '#7ec850'], width=0.8)
+    barchart.set_xlabel("Periods")
+    barchart.set_ylabel(f"Total {graph} avoided use of fossil energy")
     barchart.set_xticklabels(
         ["2010", "2011", "2012", "2013", "2014", "2015", "2016", "2017", "2018"])
     return barchart

@@ -39,15 +39,42 @@ while True:
         matplotlib.pyplot.show()
 
     elif choice == "1":
-        wind_power = input(
-            "Which kind of wind power do you want to analyse? ('at sea' or 'on land') ")
-        period_rq1 = input("Which period do you want to analyse? (2010-2018) ")
-        print("To do: create bar graph using the right kind of wind power and period.")
+        while True:
+            user_choice = input("""\nWhat do you want to do?
+    1\tMake a bar graph of the total 'absolutely' avoided use of fossil energy due to the total wind power.
+    2\tMake a bar graph of the total 'relatively' avoided use of fossil energy due to the total wind power.
+    3\tMake a bar graph of the total 'absolutely' avoided use of fossil energy due to the wind power, with subdivisions on land and at sea.
+    4\tMake a bar graph of the total 'relatively' avoided use of fossil energy due to the wind power, with subdivisions on land and at sea.
+    5\tExit the menu.\n
+    """)
 
-        # call function to make bar chart
-        barplot = wp.wind_energy_plot(dataset)
+            if user_choice == "1":
+                dataframe = wp.get_subset_dataframe_total(dataset)
+                graph = wp.bar_graph_total(dataframe)
 
-        matplotlib.pyplot.show()
+                matplotlib.pyplot.show()
+
+            elif user_choice == "2":
+                dataframe = wp.get_subset_dataframe_total(dataset, 1)
+                graph = wp.bar_graph_total(dataframe, 1)
+
+                matplotlib.pyplot.show()
+
+            elif user_choice == "3":
+                dataframe = wp.get_subset_dataframe_parts(dataset)
+                graph = wp.wind_energy_plot(dataframe)
+
+                matplotlib.pyplot.show()
+
+            elif user_choice == "4":
+                dataframe = wp.get_subset_dataframe_parts(dataset, 1)
+                graph = wp.wind_energy_plot(dataframe, 1)
+
+                matplotlib.pyplot.show()
+
+            elif user_choice == "5":
+                print("Thank you.")
+                break
 
     elif choice == "2":
         energy_source = input(

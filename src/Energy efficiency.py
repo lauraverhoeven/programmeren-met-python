@@ -34,9 +34,11 @@ calculation per source (per year:
  print(df.loc[1:3,"murders_2014"]) 
  sorted_df=df.sort_values("murders_2014",ascending=False)
  print(df["murders_2014"].hist(bins=df["murders_2014"].max())) 
+ names.sort()
 
- 
- 
+ Years: print(re.findall("(?i)pdf", "PDF, pdf, or Pdf?")) 
+ newtext = re.sub("wood|chuck|woodchuck", "gotcha!", text) print(newtext)
+ str.replace
  def Calc
  data["efficency"] = np.where(data["VermedenEmissie_5" ], data["BrutoEindverbruik_1"], data["VermedenEmissie_5" ]/data["BrutoEindverbruik_1"])
 print(data.sort_values('Protein/Sugar', ascending=False).head(3))

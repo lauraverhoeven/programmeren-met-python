@@ -99,7 +99,13 @@ while True:
         period_rq3 = input("Which period do you want to analyse? ")
         print("To do: create bar graph using the right kind of stove and period.")
     elif choice == "4":
-        energy = input("Which kind of energy source do you want to analyse? ")
+        echoice= input("Do you want to compare effciency of sources (type 1) or see how the efficiency of a source has developed over the years(type2)? ")
+        if echoice=="1":
+            bar= ee....(dataset)
+            plt.show
+        if echoice=="2":
+            dataframe= ee....(dataset)
+            plt.show
         print("To do: create bar plot using the right kind of energy source.")
     elif choice == "5":
         print("Thank you for your participation. Bye!")

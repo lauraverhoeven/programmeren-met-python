@@ -28,3 +28,26 @@ calculation per source (per year:
  "VermedenEmissie_5" /BrutoEindverbruik_1"
  
  sep=t";"
+ def PrepairDataBar(data):
+    year=  "2018JJ00"
+ def PrepairDataline
+ 
+ 
+ def Calc
+ menu['Protein/Sugar'] = np.where(menu['Sugars'] < 1, menu['Sugars'], menu['Protein']/menu['Sugars'])
+print(menu.sort_values('Protein/Sugar', ascending=False).head(3))
+ 
+ def Barchart
+ menu.groupby('Category')['Item'].count().plot(kind='bar')
+plt.show()
+pd.pivot_table(menu, index=['Item'], values=['Vitamin C (% Daily Value)']).sort_values(['Vitamin C (% Daily Value)'], ascending=False)[:10].plot(kind="bar")
+plt.show()
+
+def Linechart
+x=[year]
+y=[division]
+plt.plot(x,y) plt.show()
+plt.plot(x,y, color="r", marker="o") 
+plt.title("Efficiency over the years") 
+plt.xlabel("years") 
+plt.ylabel("Eficiency(Kton/Tjoule)") 

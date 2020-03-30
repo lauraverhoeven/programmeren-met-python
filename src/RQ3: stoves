@@ -21,7 +21,7 @@ def biomassa_wood_plot(data):
   total_biomassa_wood = "E006667"
   total_biomassa_pallet = "E007204"
 
-data_total = data[(data["BronTechniek"] == Biomassa_huishoudens_palletkachels) & data[(data["BronTechniek"] == Biomassa_huishoudens_houtkachels) & (
+  data_total = data[(data["BronTechniek"] == total_biomassa_wood) & data[(data["BronTechniek"] == total_biomassa_pallet) & (
         data["Energietoepassingen"] == totaal_energietoepassingen)]
 
   # subset data frame to get periods 2010-2018 

@@ -34,7 +34,7 @@ calculation per source (per year:
  
  
  def Calc
- menu['Protein/Sugar'] = np.where(menu['Sugars'] < 1, menu['Sugars'], menu['Protein']/menu['Sugars'])
+ data['Protein/Sugar'] = np.where(menu['Sugars'] < 1, menu['Sugars'], menu['Protein']/menu['Sugars'])
 print(menu.sort_values('Protein/Sugar', ascending=False).head(3))
  
  def Barchart

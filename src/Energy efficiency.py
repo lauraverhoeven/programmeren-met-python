@@ -31,6 +31,10 @@ calculation per source (per year:
  def PrepairDataBar(data):
     year=  "2018JJ00"
  def PrepairDataline
+ print(df.loc[1:3,"murders_2014"]) 
+ sorted_df=df.sort_values("murders_2014",ascending=False)
+ print(df["murders_2014"].hist(bins=df["murders_2014"].max())) 
+
  
  
  def Calc

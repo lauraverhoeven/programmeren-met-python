@@ -25,7 +25,7 @@ sun:
 
 calculation per source (per year:
 (Vermeden emissie van kooldioxide (CO2))/(Bruto eindverbruik hernieuwbare energie)
- "VermedenEmissie_5" /BrutoEindverbruik_1"
+ "VermedenEmissie_5" /"BrutoEindverbruik_1"
  
  sep=t";"
  def PrepairDataBar(data):
@@ -34,8 +34,8 @@ calculation per source (per year:
  
  
  def Calc
- data['Protein/Sugar'] = np.where(menu['Sugars'] < 1, menu['Sugars'], menu['Protein']/menu['Sugars'])
-print(menu.sort_values('Protein/Sugar', ascending=False).head(3))
+ data["efficency"] = np.where(data["VermedenEmissie_5" ], data["BrutoEindverbruik_1"], data["VermedenEmissie_5" ]/data["BrutoEindverbruik_1"])
+print(data.sort_values('Protein/Sugar', ascending=False).head(3))
  
  def Barchart
  menu.groupby('Category')['Item'].count().plot(kind='bar')

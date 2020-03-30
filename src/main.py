@@ -6,7 +6,7 @@ import data_handling as dh
 import wind_power as wp
 import change_emission as ce
 import Energy Efficiency as ee
-import matplotlib
+import matplotlib.pyplot as plt
 
 
 # path to file
@@ -39,7 +39,7 @@ while True:
         barplot = demo.wind_energy_plot(dataset)
 
         # make python show the plot
-        matplotlib.pyplot.show()
+        plt.show()
 
     elif choice == "1":
         while True:
@@ -55,28 +55,28 @@ while True:
                 dataframe = wp.get_subset_dataframe_total(dataset)
                 graph = wp.bar_graph_total(dataframe)
 
-                matplotlib.pyplot.show()
+                plt.show()
 
             # make a bar graph relative
             elif user_choice == "2":
                 dataframe = wp.get_subset_dataframe_total(dataset, 1)
                 graph = wp.bar_graph_total(dataframe, 1)
 
-                matplotlib.pyplot.show()
+                plt.show()
 
             # make a bar graph absolute divided
             elif user_choice == "3":
                 dataframe = wp.get_subset_dataframe_parts(dataset)
                 graph = wp.wind_energy_plot(dataframe)
 
-                matplotlib.pyplot.show()
+                plt.show()
 
             # make a bar graph relative divided
             elif user_choice == "4":
                 dataframe = wp.get_subset_dataframe_parts(dataset, 1)
                 graph = wp.wind_energy_plot(dataframe, 1)
 
-                matplotlib.pyplot.show()
+                plt.show()
 
             # exit the program
             elif user_choice == "5":
@@ -91,7 +91,7 @@ while True:
 
         demo = ce.emission_changed(dataset)
 
-        matplotlib.pyplot.show()
+        plt.show()
 
     elif choice == "3":
         stove = input(
@@ -101,9 +101,11 @@ while True:
     elif choice == "4":
         echoice= input("Do you want to compare effciency of sources (type 1) or see how the efficiency of a source has developed over the years(type2)? ")
         if echoice=="1":
+            #making a bar chart
             bar= ee....(dataset)
             plt.show
         if echoice=="2":
+            #making a line chart
             dataframe= ee....(dataset)
             plt.show
         print("To do: create bar plot using the right kind of energy source.")

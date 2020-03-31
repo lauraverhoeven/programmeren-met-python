@@ -5,7 +5,7 @@ import demo
 import data_handling as dh
 import wind_power as wp
 import change_emission as ce
-import Energy Efficiency as ee
+# import Energy Efficiency as ee
 import matplotlib.pyplot as plt
 
 
@@ -89,9 +89,12 @@ while True:
         period_rq2 = input("Which period do you want to analyse? (1990-2018) ")
         print("To do: create line chart using the right kind of period and energy source.")
 
-        demo = ce.emission_changed(dataset)
+        # demo = ce.emission_changed(dataset)
 
-        plt.show()
+        # plt.show()
+
+        demo = ce.renewable_source_relative(dataset)
+        # plt.show()
 
     elif choice == "3":
         stove = input(
@@ -99,14 +102,15 @@ while True:
         period_rq3 = input("Which period do you want to analyse? ")
         print("To do: create bar graph using the right kind of stove and period.")
     elif choice == "4":
-        echoice= input("Do you want to compare effciency of sources (type 1) or see how the efficiency of a source has developed over the years(type2)? ")
-        if echoice=="1":
-            #making a bar chart
-            bar= ee....(dataset)
+        echoice = input(
+            "Do you want to compare effciency of sources (type 1) or see how the efficiency of a source has developed over the years(type2)? ")
+        if echoice == "1":
+            # making a bar chart
+            # bar = ee....(dataset)
             plt.show
-        if echoice=="2":
-            #making a line chart
-            dataframe= ee....(dataset)
+        if echoice == "2":
+            # making a line chart
+            # dataframe = ee....(dataset)
             plt.show
         print("To do: create bar plot using the right kind of energy source.")
     elif choice == "5":

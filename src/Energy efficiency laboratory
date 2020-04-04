@@ -70,6 +70,9 @@ pd.pivot_table(menu, index=['Item'], values=['Vitamin C (% Daily Value)']).sort_
 plt.show()
 
 def Linechart
+Ook hier hebben we een combinatie van een jaar en een energiebron nodig. 
+Ik zou bij het jaar weer JJOO kunnen toevoegen, en die combineren met een energiebron,
+waardoor je een bepaalde rij krijgt. Dan kun je met een column tot een bepaald coordinaat komen.
 x=[year]
 y=[division]
 plt.plot(x,y) plt.show()

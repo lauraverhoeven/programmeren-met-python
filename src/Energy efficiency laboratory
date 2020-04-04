@@ -53,7 +53,8 @@ words=text.split( )
 print("Strip words:")
 clean= list(map(lambda x: x.strip(",."),words))
 
- 
+list comprehension gebruiken om aan elk jaar een JJOO toe te voegen:
+
  
  def PrepairDataline
  

@@ -34,14 +34,9 @@ def biomassa_wood_plot(data):
     data_wood_periods = data_wood[data_wood["Perioden"].isin(periods)]
     data_pallet_periods = data_pallet[data_pallet["Perioden"].isin(periods)]
 
-    if sort == 0:
-        data_total_periods_avoided = pd.DataFrame({'Usage wood': data_sea_periods["VermedenVerbruik_3"].tolist(
-        ), 'Wind power on land': data_land_periods["VermedenVerbruik_3"].tolist()}, index=periods)
-    elif sort == 1:
-        data_total_periods_avoided = pd.DataFrame(
-            {'Wind power at sea': data_sea_periods["VermedenVerbruikRelatief_4"].tolist(), 'Wind power on land': data_land_periods["VermedenVerbruikRelatief_4"].tolist()}, index=periods)
-    else:
-        raise ValueError("Incorrect value, put in a correct value (0 or 1).")
+    data_total_periods_avoided = pd.DataFrame(
+            {'Usage Wood': data_wood_periods["Eindverbruik"].tolist(), 'Usage Pallet': data_pallet_periods["Eindverbruik"].tolist()}, index=periods)
+
 
     # get the dataframe
     return data_total_periods_avoided

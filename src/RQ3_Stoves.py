@@ -26,9 +26,13 @@ def biomassa_wood_plot(data):
     # hieronder staand wilt hij niet uitvoeren, wat je moet doen is kijken nara mijn functie in wind_power (get_subset_dataframe_parts) en op basis
     # hiervan kijken wat je moet doen..
 
-    data_total = data[(data["BronTechniek"] == total_biomassa_wood) & data[(data["BronTechniek"] == total_biomassa_pallet) & (
-        data["Energietoepassingen"] == totaal_energietoepassingen)]]
+    data_wood = data[(data["BronTechniek"] == total_biomassa_wood)]
+    data_pallet = data[(data["BronTechniek"] == total_biomassa_pallet)]
+    
+    data_wood_periods = data_wood[data_wood["Perioden"].isin(periods)]
+    data_pallet_periods = data_pallet[data_pallet["Perioden"].isin(periods)]
 
+    
     # subset data frame to get periods 2010-2018
     data_total_periods = data_total[data_total["Perioden"].isin(periods)]
 

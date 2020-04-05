@@ -26,13 +26,26 @@ def biomassa_wood_plot(data):
     # hieronder staand wilt hij niet uitvoeren, wat je moet doen is kijken nara mijn functie in wind_power (get_subset_dataframe_parts) en op basis
     # hiervan kijken wat je moet doen..
 
-    data_wood = data[(data["BronTechniek"] == total_biomassa_wood)]
-    data_pallet = data[(data["BronTechniek"] == total_biomassa_pallet)]
-    
+    data_wood = data[(data["BronTechniek"] == total_biomassa_wood) & (
+        data["Energietoepassingen"] == total_energy_applicability)]
+    data_pallet = data[(data["BronTechniek"] == total_biomassa_pallet)& (
+        data["Energietoepassingen"] == total_energy_applicability)]
+
     data_wood_periods = data_wood[data_wood["Perioden"].isin(periods)]
     data_pallet_periods = data_pallet[data_pallet["Perioden"].isin(periods)]
 
-    
+    if sort == 0:
+        data_total_periods_avoided = pd.DataFrame({'Usage wood': data_sea_periods["VermedenVerbruik_3"].tolist(
+        ), 'Wind power on land': data_land_periods["VermedenVerbruik_3"].tolist()}, index=periods)
+    elif sort == 1:
+        data_total_periods_avoided = pd.DataFrame(
+            {'Wind power at sea': data_sea_periods["VermedenVerbruikRelatief_4"].tolist(), 'Wind power on land': data_land_periods["VermedenVerbruikRelatief_4"].tolist()}, index=periods)
+    else:
+        raise ValueError("Incorrect value, put in a correct value (0 or 1).")
+
+    # get the dataframe
+    return data_total_periods_avoided
+
     # subset data frame to get periods 2010-2018
     data_total_periods = data_total[data_total["Perioden"].isin(periods)]
 

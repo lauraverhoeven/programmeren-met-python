@@ -35,7 +35,7 @@ def biomassa_wood_plot(data):
     data_pallet_periods = data_pallet[data_pallet["Perioden"].isin(periods)]
 
     data_total_periods_avoided = pd.DataFrame(
-            {'Usage Wood': data_wood_periods["Eindverbruik"].tolist(), 'Usage Pallet': data_pallet_periods["Eindverbruik"].tolist()}, index=periods)
+            {'Usage Wood': data_wood_periods["BrutoEindverbruik_1"].tolist(), 'Usage Pallet': data_pallet_periods["BrutoEindverbruik_1"].tolist()}, index=periods)
 
 
     # get the dataframe

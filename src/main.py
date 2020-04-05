@@ -57,7 +57,7 @@ while True:
                 dataframe = wp.get_subset_dataframe_total(dataset)
                 graph = wp.bar_graph_total(dataframe)
                 # saves the graph to a png file inside of results
-                plt.savefig("../results/output/bargraph_11.png")
+                plt.savefig("../results/output/bargraph_1_1.png")
 
                 # shows the graph
                 plt.show()
@@ -67,7 +67,7 @@ while True:
                 dataframe = wp.get_subset_dataframe_total(dataset, 1)
                 graph = wp.bar_graph_total(dataframe, 1)
                 # saves the graph to a png file inside of results
-                plt.savefig("../results/output/bargraph_12.png")
+                plt.savefig("../results/output/bargraph_1_2.png")
 
                 # shows the graph
                 plt.show()
@@ -77,7 +77,7 @@ while True:
                 dataframe = wp.get_subset_dataframe_parts(dataset)
                 graph = wp.wind_energy_plot(dataframe)
                 # saves the graph to a png file inside of results
-                plt.savefig("../results/output/bargraph_13.png")
+                plt.savefig("../results/output/bargraph_1_3.png")
 
                 # shows the graph
                 plt.show()
@@ -87,7 +87,7 @@ while True:
                 dataframe = wp.get_subset_dataframe_parts(dataset, 1)
                 graph = wp.wind_energy_plot(dataframe, 1)
                 # saves the graph to a png file inside of results
-                plt.savefig("../results/output/bargraph_14.png")
+                plt.savefig("../results/output/bargraph_1_4.png")
 
                 # shows the graph
                 plt.show()
@@ -103,7 +103,7 @@ while True:
         # creates a line graph of how much the emission has changed in the Netherlands
         line_graph = ce.emission_changed(dataset)
         # saves the graph to a png file inside of results
-        plt.savefig("..results/output/linegraph_2.png")
+        plt.savefig("../results/output/linegraph_2.png")
 
         # show the line graph
         plt.show()

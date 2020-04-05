@@ -32,13 +32,14 @@ def get_subset_dataframe_total(data, sort=0):
     # subset of the data with only these periods
     data_total_periods = data_total[data_total["Perioden"].isin(periods)]
 
-    # change the data to the correct type
-    data_total_periods["VermedenVerbruik_3"] = data_total_periods["VermedenVerbruik_3"].astype(
+    # change the data to the correct type, using .loc to avoid getting a warning that we are trying to set a value on a copy of a slice from a dataframe
+    data_total_periods.loc[:, "VermedenVerbruik_3"] = data_total_periods.loc[:, "VermedenVerbruik_3"].astype(
         int)
-    data_total_periods["VermedenVerbruikRelatief_4"] = data_total_periods["VermedenVerbruikRelatief_4"].astype(
+    data_total_periods.loc[:, "VermedenVerbruikRelatief_4"] = data_total_periods.loc[:, "VermedenVerbruikRelatief_4"].astype(
         float)
 
     # get the new subset of the total avoided use of fossil energy and relative avoided use of fossil energy with these periods
+    # make a list of the data as to be able to put it in a new dataframe
     if sort == 0:
         data_subset = pd.DataFrame(
             {'Absolutely': data_total_periods["VermedenVerbruik_3"].tolist()}, index=periods)
@@ -82,17 +83,18 @@ def get_subset_dataframe_parts(data, sort=0):
     data_sea_periods = data_sea[data_sea["Perioden"].isin(periods)]
     data_land_periods = data_land[data_land["Perioden"].isin(periods)]
 
-    # change avoided use relative from strings to integers
-    data_sea_periods["VermedenVerbruikRelatief_4"] = data_sea_periods["VermedenVerbruikRelatief_4"].astype(
+    # change avoided use relative from strings to floats (using loc to avoid getting a warning that we are trying to set a value on a copy of a slice from a dataframe)
+    data_sea_periods.loc[:, "VermedenVerbruikRelatief_4"] = data_sea_periods.loc[:, "VermedenVerbruikRelatief_4"].astype(
         float)
-    data_land_periods["VermedenVerbruikRelatief_4"] = data_land_periods["VermedenVerbruikRelatief_4"].astype(
+    data_land_periods.loc[:, "VermedenVerbruikRelatief_4"] = data_land_periods.loc[:, "VermedenVerbruikRelatief_4"].astype(
         float)
-    data_sea_periods["VermedenVerbruik_3"] = data_sea_periods["VermedenVerbruik_3"].astype(
+    # change avoided use from strings to integers (using loc to avoid getting a warning that we are trying to set a value on a copy of a slice from a dataframe)
+    data_sea_periods.loc[:, "VermedenVerbruik_3"] = data_sea_periods.loc[:, "VermedenVerbruik_3"].astype(
         int)
-    data_land_periods["VermedenVerbruik_3"] = data_land_periods["VermedenVerbruik_3"].astype(
+    data_land_periods.loc[:, "VermedenVerbruik_3"] = data_land_periods.loc[:, "VermedenVerbruik_3"].astype(
         int)
 
-    # make a new dataframe of the two dataframes, make a list of it to be able to get them next to each other,
+    # make a new dataframe of the two dataframes, make a list of it to be able to get them next to each other in a dataframe
     if sort == 0:
         data_total_periods_avoided = pd.DataFrame({'Wind power at sea': data_sea_periods["VermedenVerbruik_3"].tolist(
         ), 'Wind power on land': data_land_periods["VermedenVerbruik_3"].tolist()}, index=periods)

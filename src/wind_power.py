@@ -116,7 +116,7 @@ def bar_graph_total(dataframe, sort_graph=0):
         raise ValueError("Incorrect value, put in correct value (0 or 1).")
 
     barchart = dataframe.plot.bar(
-        rot=0, title=f"Total {graph} avoided use of fossil energy due to wind power", color="#121846", width=0.8)
+        rot=0, title=f"Total {graph} avoided use of fossil energy due to wind power", color="#121846", width=0.8, legend=False)
     barchart.set_xlabel("Periods")
     barchart.set_ylabel(f"Total {graph} avoided use of fossil energy")
     barchart.set_xticklabels(

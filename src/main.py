@@ -56,28 +56,40 @@ while True:
             if user_choice == "1":
                 dataframe = wp.get_subset_dataframe_total(dataset)
                 graph = wp.bar_graph_total(dataframe)
+                # saves the graph to a png file inside of results
+                plt.savefig("../results/output/bargraph_11.png")
 
+                # shows the graph
                 plt.show()
 
             # make a bar graph relative
             elif user_choice == "2":
                 dataframe = wp.get_subset_dataframe_total(dataset, 1)
                 graph = wp.bar_graph_total(dataframe, 1)
+                # saves the graph to a png file inside of results
+                plt.savefig("../results/output/bargraph_12.png")
 
+                # shows the graph
                 plt.show()
 
             # make a bar graph absolute divided
             elif user_choice == "3":
                 dataframe = wp.get_subset_dataframe_parts(dataset)
                 graph = wp.wind_energy_plot(dataframe)
+                # saves the graph to a png file inside of results
+                plt.savefig("../results/output/bargraph_13.png")
 
+                # shows the graph
                 plt.show()
 
             # make a bar graph relative divided
             elif user_choice == "4":
                 dataframe = wp.get_subset_dataframe_parts(dataset, 1)
                 graph = wp.wind_energy_plot(dataframe, 1)
+                # saves the graph to a png file inside of results
+                plt.savefig("../results/output/bargraph_14.png")
 
+                # shows the graph
                 plt.show()
 
             # exit the program
@@ -90,6 +102,8 @@ while True:
 
         # creates a line graph of how much the emission has changed in the Netherlands
         line_graph = ce.emission_changed(dataset)
+        # saves the graph to a png file inside of results
+        plt.savefig("..results/output/linegraph_2.png")
 
         # show the line graph
         plt.show()

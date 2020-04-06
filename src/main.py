@@ -124,13 +124,15 @@ while True:
     elif choice == "4":
         echoice = input(
             "Do you want to compare effciency of sources (1) or see how the efficiency of energysource have developed over the years(2)? ")
-        if echoice == "1":
-            barset=ee.Efficiencybars(dataset)
+         if echoice == "1":
+            efficient= ee.efficiency(dataset)
+            barset= ee.barchart(dataset, efficient)
             plt.show()
            
         if echoice == "2"
-        lineplot=ee.lines(dataset)
-        plt.show()
+            efficient= ee.efficiency(dataset)
+            lineset= ee.linechart(dataset, efficient)
+            plt.show()
         
     elif choice == "5":
         print("Thank you for your participation. Bye!")

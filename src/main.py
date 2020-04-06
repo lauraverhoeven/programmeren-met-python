@@ -123,16 +123,15 @@ while True:
     # research question 4
     elif choice == "4":
         echoice = input(
-            "Do you want to compare effciency of sources (type 1) or see how the efficiency of a source has developed over the years(type2)? ")
+            "Do you want to compare effciency of sources (1) or see how the efficiency of energysource have developed over the years(2)? ")
         if echoice == "1":
-            # making a bar chart
-            # bar = ee....(dataset)
-            plt.show
-        if echoice == "2":
-            # making a line chart
-            # dataframe = ee....(dataset)
-            plt.show
-        print("To do: create bar plot using the right kind of energy source.")
+            barset=ee.Efficiencybars(dataset)
+            plt.show()
+           
+        if echoice == "2"
+        lineplot=ee.lines(dataset)
+        plt.show()
+        
     elif choice == "5":
         print("Thank you for your participation. Bye!")
         break

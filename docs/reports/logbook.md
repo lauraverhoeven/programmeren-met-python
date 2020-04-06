@@ -51,3 +51,7 @@ Planned additional files are [data_handling.py](src/data_handling.py) and the mo
 
 Since one of our members has stopped with the course, a few weeks before the end of the course, we had to improvise a little bit. Research question 1 and 2 have been answered by Laura Verhoeven. Research question 2 has been changed, it does not include the second part of the question ("which renewable energy source has relatively reduced CO2 emission the most"). The first part of research question 2 has been answered. 
 Emiel Robben answered research question 3, and Maarten van Oschen answered research question 4. 
+
+# Poster 
+
+The poster containing the different graphs of our questions is located at [poster](docs/reports/Renewable_energy_poster_Teams_final_versionPDF.pdf)

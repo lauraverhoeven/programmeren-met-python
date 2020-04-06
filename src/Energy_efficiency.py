@@ -15,16 +15,14 @@ def efficiency(data):
 
 def barchart(data, efficiency):
 #setting some lists
-    list0=["Waterforce", "Wind", "Sun","Earth energy", "Biomass"]
-    list2018= [144,260,608,1304, 2232]
-    list2017= []
-    for i in list2018:
-        d=i-1
-        list2017.append(d)
-#controle:print(list2017)
-#calculating efficiency
     Repeat= True
     while Repeat:
+        list0=["Waterforce", "Wind", "Sun","Earth energy", "Biomass"]
+        list2018= [144,260,608,1304, 2232]
+        list2017= []
+        for i in list2018:
+            d=i-1
+        list2017.append(d)
         yearbar=int(input("Of which year do you want to see the efficiency of different renewable energy sources? 2017 of 2018?"))
         if yearbar==2017:
             list2= []

@@ -1,9 +1,4 @@
-class RQ4:
-    
-    def __init__(self, data):
-        self.data=data
 
-        ...
 def efficiency(data):
     a=data.loc[i,"VermedenEmissie_5"]
     b=data.loc[i,"BrutoEindverbruik_1"]
@@ -13,7 +8,7 @@ def efficiency(data):
     yearsefficiency=(int_a/int_b)
     return yearsefficiency
 
-def barchart(data):
+def barchart(data, efficiency):
 #setting some lists
     list0=["Waterforce", "Wind", "Sun","Earth energy", "Biomass"]
     list2018= [144,260,608,1304, 2232]
@@ -29,24 +24,14 @@ def barchart(data):
         if yearbar==2017:
             list2= []
             for i in list2017:
-                a=data.loc[i,"VermedenEmissie_5"]
-                b=data.loc[i,"BrutoEindverbruik_1"]
-                int_a= int(a)
-                int_b= int(b)
-                efficiency=(int_a/int_b)
-                list2.append(efficiency)
+                list2.append(efficiency(data))
             Renewable_frame = pd.DataFrame({'Energy source':list0, 'Efficiency':list2})
             Efficiencybars = Renewable_frame.plot.bar(x= 'Energy source', y='Efficiency',title='Efficiency:Avoided Emission/Consumption (in Kton/TJ)', rot=0)
             plt.show()
         elif yearbar==2018:
             list2= []
             for i in list2018:
-                a=data.loc[i,"VermedenEmissie_5"]
-                b=data.loc[i,"BrutoEindverbruik_1"]
-                int_a= int(a)
-                int_b= int(b)
-                efficiency=(int_a/int_b)
-                list2.append(efficiency)
+                list2.append(efficiency(data))
             Renewable_frame = pd.DataFrame({'Energy source':list0, 'Efficiency':list2})
             Efficiencybars = Renewable_frame.plot.bar(x= 'Energy source', y='Efficiency',title='Efficiency:Avoided Emission/Consumption (in Kton/TJ)', rot=0)
             return Efficiencybars
@@ -59,7 +44,7 @@ def barchart(data):
 
 
 
-def linechart (data): 
+def linechart (data, efficiency): 
 #setting up lists. 0 will be used in the graph, 2018 is used as a basis: when you want to
 #know the efficiency of for example 2016, you mustdo 144-2: then you get at the line 
 #where you can calculate the efficiency of in this example 2016. 
@@ -121,11 +106,9 @@ while repeat:
             #prapairing the multiline-graph
             sustainablestructure = pd.DataFrame({"Waterforce":wateryearlist, "Wind":windyearlist, "Sun":sunyearlist,"Earth energy":earthyearlist, "Biomass":bioyearlist},index=yearslist)
             lines = sustainablestructure.plot.line()
-            #making a graph: setting some things
-            plt.title("Efficiency over the years")
-            plt.xlabel("Years")
-            plt.ylabel("Efficiency")
-            plt.show()
+            #making a graph: setting some thing
+            
+            return lines
             
             
         else: 

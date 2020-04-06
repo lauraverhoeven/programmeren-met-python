@@ -108,15 +108,15 @@ while repeat:
                 #the efficiency via a calculation.
                 i=(list2018[0])-(2018-k)
                 #i is used in def efficiency
-                wateryearlist.append(efficiency(renew))
+                wateryearlist.append(efficiency(data))
            
             for k in yearslist:
                 i=(list2018[1])-(2018-k)
-                windyearlist.append(efficiency(renew))
+                windyearlist.append(efficiency(data))
             
             for k in yearslist:
                 i=(list2018[2])-(2018-k)
-                sunyearlist.append(efficiency(renew))
+                sunyearlist.append(efficiency(data))
             
             #prapairing the multiline-graph
             sustainablestructure = pd.DataFrame({"Waterforce":wateryearlist, "Wind":windyearlist, "Sun":sunyearlist,"Earth energy":earthyearlist, "Biomass":bioyearlist},index=yearslist)

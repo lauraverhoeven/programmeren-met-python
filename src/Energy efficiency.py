@@ -1,3 +1,8 @@
+#A program to create a barchart and a linechart
+
+import pandas as pd
+import numpy as np
+import matplotlib.pyplot as plt
 
 def efficiency(data):
     a=data.loc[i,"VermedenEmissie_5"]
@@ -20,7 +25,7 @@ def barchart(data, efficiency):
 #calculating efficiency
     Repeat= True
     while Repeat:
-        yearbar=int(input("Of which year do you want to see the efficiency? 2017 of 2018?"))
+        yearbar=int(input("Of which year do you want to see the efficiency of different renewable energy sources? 2017 of 2018?"))
         if yearbar==2017:
             list2= []
             for i in list2017:
@@ -45,7 +50,7 @@ def barchart(data, efficiency):
 
 
 def linechart (data, efficiency): 
-#setting up lists. 0 will be used in the graph, 2018 is used as a basis: when you want to
+#setting up lists. list0 will be used in the graph, 2018 is used as a basis: when you want to
 #know the efficiency of for example 2016, you mustdo 144-2: then you get at the line 
 #where you can calculate the efficiency of in this example 2016. 
 #the other lists here are still empty, but will be filled later.

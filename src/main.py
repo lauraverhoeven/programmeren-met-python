@@ -6,7 +6,7 @@ import data_handling as dh
 import wind_power as wp
 import change_emission as ce
 import RQ3_Stoves as st
-# import Energy_Efficiency as ee
+import Energy_efficiency as ee
 import matplotlib.pyplot as plt
 import pandas as pd
 
@@ -132,6 +132,9 @@ while True:
         if echoice == "2"
             efficient= ee.efficiency(dataset)
             lineset= ee.linechart(dataset, efficient)
+            plt.title("Efficiency over the years")
+            plt.xlabel("Years")
+            plt.ylabel("Efficiency")
             plt.show()
         
     elif choice == "5":

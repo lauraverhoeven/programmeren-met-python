@@ -1,59 +1,119 @@
-total of energy practices: 
+import pandas as pd
+import numpy as np
+import matplotlib.pyplot as plt
 
-waterforce: "E007022 "         "E006587 "
-total wind:E007022             "E006588 "  
-total sun: E007022             "E006589" 
+data= pd.read_csv("raw_data_renewable_energy.csv", sep=";")
 
+#setting some lists
+list0=["Waterforce", "Wind", "Sun","Earth energy", "Biomass"]
+list2018= [144,160,608,1304, 2232]
+list2017= []
+for i in list2018:
+    d=i-1
+    list2017.append(d)
+#controle:print(list2017)
+#calculating efficiency
+Repeat= True
+while Repeat:
+    yearbar=int(input("Of which year do you want to see the efficiency? 2017 of 2018?"))
+    if yearbar==2017:
+        list2= []
+        for i in list2017:
+            a=data.loc[i,"VermedenEmissie_5"]
+            b=data.loc[i,"BrutoEindverbruik_1"]
+            int_a= int(a)
+            int_b= int(b)
+            efficiency=(int_a/int_b)
+            list2.append(efficiency)
+        Renewable_frame = pd.DataFrame({'Energy source':list0, 'Efficiency':list2})
+        Efficiencybars = Renewable_frame.plot.bar(x= 'Energy source', y='Efficiency',title='Efficiency:Avoided Emission/Consumption (in Kton/TJ)', rot=0)
+        plt.show()
+    elif yearbar==2018:
+        list2= []
+        for i in list2018:
+            a=data.loc[i,"VermedenEmissie_5"]
+            b=data.loc[i,"BrutoEindverbruik_1"]
+            int_a= int(a)
+            int_b= int(b)
+            efficiency=(int_a/int_b)
+            list2.append(efficiency)
+        Renewable_frame = pd.DataFrame({'Energy source':list0, 'Efficiency':list2})
+        Efficiencybars = Renewable_frame.plot.bar(x= 'Energy source', y='Efficiency',title='Efficiency:Avoided Emission/Consumption (in Kton/TJ)', rot=0)
+        plt.show()
+    else:
+        print("You typed the wrong number. Please try again.")
+    Quit=input("Do you want to quit? y/n") 
+    if Quit=="y":
+        Repeat=False
 
-Years: 2017, 2018
-years=["2017JJ00",
-       "2018JJ00"]
+def efficiency(data):
+    a=data.loc[i,"VermedenEmissie_5"]
+    b=data.loc[i,"BrutoEindverbruik_1"]
+    #converting strings to integers
+    int_a= int(a)
+    int_b= int(b)
+    yearsefficiency=(int_a/int_b)
+    return yearsefficiency
+#setting some lists
+list0=["Waterforce", "Wind", "Sun","Earth energy", "Biomass"]
+list2018= [144,160,608,1304, 2232]
+wateryearlist= []
+sunyearlist= []
+windyearlist= []
+earthyearlist= []
+bioyearlist= []
 
-waterforce                           BrutoEindverbruik_1"                            "VermedenEmissie_5"
-"143";"E006587 ";"E007022 ";"2017JJ00";"     339";"    0.02";"     761";"    0.02";"      56";"    0.03"
-"144";"E006587 ";"E007022 ";"2018JJ00";"     340";"    0.02";"     761";"    0.02";"      56";"    0.03"
+repeat= True
+while repeat:
+    try:    
+        print('Welcome to the linegraph function. You can select 2 years as a beginning and end of your x-axis of your line graph.')
+        year1= int(input('Which year do you want the line graph to start with?'))
+        year2= int(input('Which year do you want the line graph to end with?'))
+        if 1990 <= year1 <= 2018 and 1990 <= year2 <= 2018 and year2>year1:
+            year=year2
+            yearslist= []
+            yearslist.append(year)
+            #making a list of the years in between year1 and year2
+            while year>year1:
+                year= year-1
+                yearslist.append(year)
+            print(yearslist)
+            yearslist.sort()
+            print(yearslist)
+            #calculating the efficiencies per Year, per energy source
+            for k in yearslist:
+                i=(list2018[0])-(2018-k)
+                wateryearlist.append(efficiency(renew))
+            print(wateryearlist)
+            for k in yearslist:
+                i=(list2018[1])-(2018-k)
+                windyearlist.append(efficiency(renew))
+            print(windyearlist)
+            for k in yearslist:
+                i=(list2018[2])-(2018-k)
+                sunyearlist.append(efficiency(renew))
+            print(sunyearlist)
+            for k in yearslist:
+                i=(list2018[3])-(2018-k)
+                earthyearlist.append(efficiency(renew))
+            print(earthyearlist)
+            for k in yearslist:
+                i=(list2018[4])-(2018-k)
+                bioyearlist.append(efficiency(renew))
+            print(bioyearlist)
+            #making a graph
+            plt.title("Efficiency over the years")
+            plt.xlabel("Years")
+            plt.ylabel("Efficiency")
+            sustainablestructure = pd.DataFrame({"Waterforce":wateryearlist, "Wind":windyearlist, "Sun":sunyearlist,"Earth energy":earthyearlist, "Biomass":bioyearlist},index=yearslist)
+            lines = sustainablestructure.plot.line()
+            print(lines)
+            
+        else: 
+            print("You typed the wrong number. Look out that the first number is smaller than te second. Please try again.")
+    except Exception:
+        print("You must typ a number/ numbers")   
+    Quit=input("Do you want to quit? y/n") 
+    if Quit=="y":
+        repeat=False
 
-
-wind:
-"259";"E006588 ";"E007022 ";"2017JJ00";"   34710";"    1.64";"   82374";"    2.60";"    6022";"    3.65"
-"260";"E006588 ";"E007022 ";"2018JJ00";"   36106";"    1.71";"   84033";"    2.70";"    6143";"    3.81"
-
-
-sun:
-"607";"E006589 ";"E007022 ";"2017JJ00";"    9080";"    0.43";"   18984";"    0.60";"    1368";"    0.83"
-"608";"E006589 ";"E007022 ";"2018JJ00";"   14451";"    0.68";"   31017";"    1.00";"    2247";"    1.39"
-
-calculation per source (per year:
-(Vermeden emissie van kooldioxide (CO2))/(Bruto eindverbruik hernieuwbare energie)
- "VermedenEmissie_5" /"BrutoEindverbruik_1"
- 
- sep=t";"
- def PrepairDataBar(data):
-    year=  "2018JJ00"
- def PrepairDataline
- print(df.loc[1:3,"murders_2014"]) 
- sorted_df=df.sort_values("murders_2014",ascending=False)
- print(df["murders_2014"].hist(bins=df["murders_2014"].max())) 
- names.sort()
-
- Years: print(re.findall("(?i)pdf", "PDF, pdf, or Pdf?")) 
- newtext = re.sub("wood|chuck|woodchuck", "gotcha!", text) print(newtext)
- str.replace
- def Calc
- data["efficency"] = np.where(data["VermedenEmissie_5" ], data["BrutoEindverbruik_1"], data["VermedenEmissie_5" ]/data["BrutoEindverbruik_1"])
-print(data.sort_values('Protein/Sugar', ascending=False).head(3))
- 
- def Barchart
- menu.groupby('Category')['Item'].count().plot(kind='bar')
-plt.show()
-pd.pivot_table(menu, index=['Item'], values=['Vitamin C (% Daily Value)']).sort_values(['Vitamin C (% Daily Value)'], ascending=False)[:10].plot(kind="bar")
-plt.show()
-
-def Linechart
-x=[year]
-y=[division]
-plt.plot(x,y) plt.show()
-plt.plot(x,y, color="r", marker="o") 
-plt.title("Efficiency over the years") 
-plt.xlabel("years") 
-plt.ylabel("Eficiency(Kton/Tjoule)") 

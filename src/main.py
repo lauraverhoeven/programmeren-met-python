@@ -125,16 +125,21 @@ while True:
         echoice = input(
             "Do you want to compare effciency of sources (1) or see how the efficiency of energysource have developed over the years(2)? ")
          if echoice == "1":
+            # the efficiency function is connected with the barchart function
             efficient= ee.efficiency(dataset)
             barset= ee.barchart(dataset, efficient)
+            #show bargraph
             plt.show()
            
         if echoice == "2"
+             # the efficiency function is connected with the barchart function
             efficient= ee.efficiency(dataset)
             lineset= ee.linechart(dataset, efficient)
+            #some additional parts of the graph are introduced
             plt.title("Efficiency over the years")
             plt.xlabel("Years")
             plt.ylabel("Efficiency")
+            #show linegraph
             plt.show()
         
     elif choice == "5":

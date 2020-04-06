@@ -123,7 +123,7 @@ while True:
     # research question 4
     elif choice == "4":
         echoice = input(
-            "Do you want to compare effciency of sources (1) or see how the efficiency of energysource have developed over the years(2)? ")
+            "Do you want to compare efficiency of sources (1) or see how the efficiency of energybsources have developed over the years(2)? ")
          if echoice == "1":
             # the efficiency function is connected with the barchart function
             efficient= ee.efficiency(dataset)

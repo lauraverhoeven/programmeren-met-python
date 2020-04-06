@@ -61,7 +61,7 @@ while True:
                 plt.savefig("../results/output/bargraph_1_1.png")
 
                 # shows the graph
-                # plt.show()
+                plt.show()
 
             # make a bar graph relative
             elif user_choice == "2":
@@ -124,24 +124,24 @@ while True:
     elif choice == "4":
         echoice = input(
             "Do you want to compare efficiency of sources (1) or see how the efficiency of energybsources have developed over the years(2)? ")
-         if echoice == "1":
+        if echoice == "1":
             # the efficiency function is connected with the barchart function
-            efficient= ee.efficiency(dataset)
-            barset= ee.barchart(dataset, efficient)
-            #show bargraph
+            efficient = ee.efficiency(dataset)
+            barset = ee.barchart(dataset, efficient)
+            # show bargraph
             plt.show()
-           
-        if echoice == "2"
-             # the efficiency function is connected with the barchart function
-            efficient= ee.efficiency(dataset)
-            lineset= ee.linechart(dataset, efficient)
-            #some additional parts of the graph are introduced
+
+        if echoice == "2":
+            # the efficiency function is connected with the barchart function
+            efficient = ee.efficiency(dataset)
+            lineset = ee.linechart(dataset, efficient)
+            # some additional parts of the graph are introduced
             plt.title("Efficiency over the years")
             plt.xlabel("Years")
             plt.ylabel("Efficiency")
-            #show linegraph
+            # show linegraph
             plt.show()
-        
+
     elif choice == "5":
         print("Thank you for your participation. Bye!")
         break

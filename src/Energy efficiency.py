@@ -4,47 +4,49 @@ import matplotlib.pyplot as plt
 
 data= pd.read_csv("raw_data_renewable_energy.csv", sep=";")
 
+def barchart(data):
 #setting some lists
-list0=["Waterforce", "Wind", "Sun","Earth energy", "Biomass"]
-list2018= [144,160,608,1304, 2232]
-list2017= []
-for i in list2018:
-    d=i-1
-    list2017.append(d)
+    list0=["Waterforce", "Wind", "Sun","Earth energy", "Biomass"]
+    list2018= [144,160,608,1304, 2232]
+    list2017= []
+    for i in list2018:
+        d=i-1
+        list2017.append(d)
 #controle:print(list2017)
 #calculating efficiency
-Repeat= True
-while Repeat:
-    yearbar=int(input("Of which year do you want to see the efficiency? 2017 of 2018?"))
-    if yearbar==2017:
-        list2= []
-        for i in list2017:
-            a=data.loc[i,"VermedenEmissie_5"]
-            b=data.loc[i,"BrutoEindverbruik_1"]
-            int_a= int(a)
-            int_b= int(b)
-            efficiency=(int_a/int_b)
-            list2.append(efficiency)
-        Renewable_frame = pd.DataFrame({'Energy source':list0, 'Efficiency':list2})
-        Efficiencybars = Renewable_frame.plot.bar(x= 'Energy source', y='Efficiency',title='Efficiency:Avoided Emission/Consumption (in Kton/TJ)', rot=0)
-        plt.show()
-    elif yearbar==2018:
-        list2= []
-        for i in list2018:
-            a=data.loc[i,"VermedenEmissie_5"]
-            b=data.loc[i,"BrutoEindverbruik_1"]
-            int_a= int(a)
-            int_b= int(b)
-            efficiency=(int_a/int_b)
-            list2.append(efficiency)
-        Renewable_frame = pd.DataFrame({'Energy source':list0, 'Efficiency':list2})
-        Efficiencybars = Renewable_frame.plot.bar(x= 'Energy source', y='Efficiency',title='Efficiency:Avoided Emission/Consumption (in Kton/TJ)', rot=0)
-        plt.show()
-    else:
-        print("You typed the wrong number. Please try again.")
-    Quit=input("Do you want to quit? y/n") 
-    if Quit=="y":
-        Repeat=False
+    Repeat= True
+    while Repeat:
+        yearbar=int(input("Of which year do you want to see the efficiency? 2017 of 2018?"))
+        if yearbar==2017:
+            list2= []
+            for i in list2017:
+                a=data.loc[i,"VermedenEmissie_5"]
+                b=data.loc[i,"BrutoEindverbruik_1"]
+                int_a= int(a)
+                int_b= int(b)
+                efficiency=(int_a/int_b)
+                list2.append(efficiency)
+            Renewable_frame = pd.DataFrame({'Energy source':list0, 'Efficiency':list2})
+            Efficiencybars = Renewable_frame.plot.bar(x= 'Energy source', y='Efficiency',title='Efficiency:Avoided Emission/Consumption (in Kton/TJ)', rot=0)
+            plt.show()
+        elif yearbar==2018:
+            list2= []
+            for i in list2018:
+                a=data.loc[i,"VermedenEmissie_5"]
+                b=data.loc[i,"BrutoEindverbruik_1"]
+                int_a= int(a)
+                int_b= int(b)
+                efficiency=(int_a/int_b)
+                list2.append(efficiency)
+            Renewable_frame = pd.DataFrame({'Energy source':list0, 'Efficiency':list2})
+            Efficiencybars = Renewable_frame.plot.bar(x= 'Energy source', y='Efficiency',title='Efficiency:Avoided Emission/Consumption (in Kton/TJ)', rot=0)
+            return Efficiencybars
+        else:
+            print("You typed the wrong number. Please try again.")
+        Quit=input("Do you want to quit? y/n") 
+        if Quit=="y":
+            Repeat=False
+            
 
 def efficiency(data):
     a=data.loc[i,"VermedenEmissie_5"]
@@ -54,6 +56,8 @@ def efficiency(data):
     int_b= int(b)
     yearsefficiency=(int_a/int_b)
     return yearsefficiency
+
+def linechart (data): 
 #setting some lists
 list0=["Waterforce", "Wind", "Sun","Earth energy", "Biomass"]
 list2018= [144,160,608,1304, 2232]
@@ -107,7 +111,8 @@ while repeat:
             plt.ylabel("Efficiency")
             sustainablestructure = pd.DataFrame({"Waterforce":wateryearlist, "Wind":windyearlist, "Sun":sunyearlist,"Earth energy":earthyearlist, "Biomass":bioyearlist},index=yearslist)
             lines = sustainablestructure.plot.line()
-            print(lines)
+            return lines
+          
             
         else: 
             print("You typed the wrong number. Look out that the first number is smaller than te second. Please try again.")

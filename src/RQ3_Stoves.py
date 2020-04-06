@@ -23,30 +23,29 @@ def biomassa_wood_plot(data):
     total_biomassa_pallet = "E007204"
     totaal_energietoepassingen = "E007022"
 
-    # hieronder staand wilt hij niet uitvoeren, wat je moet doen is kijken nara mijn functie in wind_power (get_subset_dataframe_parts) en op basis
-    # hiervan kijken wat je moet doen..
-
+    # subset of the dataframe
     data_wood = data[(data["BronTechniek"] == total_biomassa_wood) & (
-        data["Energietoepassingen"] == total_energy_applicability)]
-    data_pallet = data[(data["BronTechniek"] == total_biomassa_pallet)& (
-        data["Energietoepassingen"] == total_energy_applicability)]
+        data["Energietoepassingen"] == totaal_energietoepassingen)]
+    data_pallet = data[(data["BronTechniek"] == total_biomassa_pallet) & (
+        data["Energietoepassingen"] == totaal_energietoepassingen)]
 
+    # subset of the data, using the periods
     data_wood_periods = data_wood[data_wood["Perioden"].isin(periods)]
     data_pallet_periods = data_pallet[data_pallet["Perioden"].isin(periods)]
 
-    data_total_periods_avoided = pd.DataFrame(
-            {'Usage Wood': data_wood_periods["BrutoEindverbruik_1"].tolist(), 'Usage Pallet': data_pallet_periods["BrutoEindverbruik_1"].tolist()}, index=periods)
+    # getting the data to be integers instead of strings
+    data_wood_periods.loc[:, "BrutoEindverbruik_1"] = data_wood_periods.loc[:,
+                                                                            "BrutoEindverbruik_1"].astype(int)
+    data_pallet_periods.loc[:, "BrutoEindverbruik_1"] = data_pallet_periods.loc[:,
+                                                                                "BrutoEindverbruik_1"].astype(int)
 
-
-    # get the dataframe
-    return data_total_periods_avoided
-
-    # subset data frame to get periods 2010-2018
-    data_total_periods = data_total[data_total["Perioden"].isin(periods)]
+    # creating a new dataframe with Usage wood and Usage pallet as columns
+    subset_biomassa = pd.DataFrame(
+        {'Usage Wood': data_wood_periods["BrutoEindverbruik_1"].tolist(), 'Usage Pallet': data_pallet_periods["BrutoEindverbruik_1"].tolist()}, index=periods)
 
     # create barchart for difference in used Biomassa between wooden and pallet stoves in households in period 2010-2018
-    barchart = data_total_periods.plot.bar(x="Perioden", y="Verbruik_3", legend=False,
-                                           title="Difference in used Biomassa between wooden and pallet stove in households")
+    barchart = subset_biomassa.plot.bar(
+        title="Difference in used Biomassa between wooden and pallet stove in households", color=['#0077be', '#7ec850'], width=0.8)
     barchart.set_xlabel("Periods")
     barchart.set_ylabel("Total difference in used Biomassa")
     barchart.set_xticklabels(

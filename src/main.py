@@ -6,7 +6,7 @@ import data_handling as dh
 import wind_power as wp
 import change_emission as ce
 import RQ3_Stoves as st
-import Energy_Efficiency as ee
+# import Energy_Efficiency as ee
 import matplotlib.pyplot as plt
 import pandas as pd
 
@@ -61,7 +61,7 @@ while True:
                 plt.savefig("../results/output/bargraph_1_1.png")
 
                 # shows the graph
-                plt.show()
+                # plt.show()
 
             # make a bar graph relative
             elif user_choice == "2":
@@ -111,14 +111,14 @@ while True:
 
     # research question 3
     elif choice == "3":
-        stove = input(
-            "Which kind of stove do you want to analyse? ('wooden' or 'pallet') ")
-        period_rq3 = input("Which period do you want to analyse? ")
-        print("To do: create bar graph using the right kind of stove and period.")
 
+        # creates a bar graph of the biomassa
         graph = st.biomassa_wood_plot(dataset)
+        # saves the bar graph
+        plt.savefig("../results/output/bargraph_3.png")
 
-        # plt.show()
+        # show the bar graph
+        plt.show()
 
     # research question 4
     elif choice == "4":
